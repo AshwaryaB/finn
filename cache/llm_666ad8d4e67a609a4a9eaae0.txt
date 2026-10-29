@@ -1,0 +1,45 @@
+```json
+{
+ "quarter_discussed": "Q1 FY2027",
+ "guidance": [
+  {
+   "metric": "margins",
+   "statement": "Management expects to exit the year at 25% plus margins and strive to achieve it sooner.",
+   "quote": "We want to exit at 25% plus and strive to achieve it sooner rather than later."
+  }
+ },
+ "delivered_claims": [
+  {
+   "metric": "revenue",
+   "statement": "Q1 revenue was ₹72,275 crore, up 2.2% sequentially and 13.9% year-on-year.",
+   "quote": "Our Q1 revenue stood at ₹72,275 crore, growing 2.2% sequentially and 13.9% year-on-year."
+  },
+  {
+   "metric": "TCV",
+   "statement": "Delivered a TCV of $9.5 billion in Q1.",
+   "quote": "We delivered a TCV of $9.5 billion, including net new AI-led business transformation deals"
+  },
+  {
+   "metric": "AI services revenue",
+   "statement": "AI services revenue reached $2.6 billion in annualized revenue, up 13.6% QoQ.",
+   "quote": "At the end of Q1 FY27, it stands at $2.6 billion in annualized revenue, which is up 13.6% QoQ."
+  },
+  {
+   "metric": "operating margins",
+   "statement": "Operating margins stood at 24% for the quarter.",
+   "quote": "Our operating margins stood at 24%, down 130 bps sequentially, primarily due to wage hikes."
+  },
+  {
+   "metric": "net margin",
+   "statement": "Net margin for the quarter was 19.2%.",
+   "quote": "Net margin for the quarter was 19.2%."
+  }
+ ],
+ "analyst_pressure": [
+  "Macro and geopolitical uncertainty impact on near-term demand and Q2 outlook",
+  "AI revenue lumpiness and productivity pass-through impact on top-line",
+  "Sustainability of hiring and wage hikes despite AI white-collar reduction narratives"
+ ],
+ "tone": "Cautiously optimistic"
+}
+```

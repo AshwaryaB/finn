@@ -1,0 +1,51 @@
+```json
+{
+ "quarter_discussed": "Q1FY27",
+ "guidance": [
+  {
+   "metric": "credit growth",
+   "statement": "management guides for a credit growth of 14% to 15%",
+   "quote": "That is the reason I have given the credit growth guidance of 14% to 15%."
+  },
+  {
+   "metric": "domestic net interest margin",
+   "statement": "management expects domestic net interest margin to remain resilient at 3% for the financial year",
+   "quote": "domestic Net Interest Margin remained resilient at 3%, reinforcing our confidence in maintaining our guidance for the financial year."
+  },
+  {
+   "metric": "loan growth guidance",
+   "statement": "management revised FY27 loan growth guidance to 13-15%",
+   "quote": "the bank has revised FY27 loan growth guidance to 13-15% from 12-14%"
+  }
+ ],
+ "delivered_claims": [
+  {
+   "metric": "net profit",
+   "statement": "net profit reached a record ₹21,121 crore supported by operating performance and cost management",
+   "quote": "Our net profit reached a record ₹21,121 crore, supported by healthy operating performance and disciplined cost management."
+  },
+  {
+   "metric": "operating profit",
+   "statement": "operating profit grew by 9.77% year-on-year",
+   "quote": "Operating Profit grew by 9.77% year -on-year"
+  },
+  {
+   "metric": "FCNR(B) mobilization",
+   "statement": "mobilized almost $6 billion in FCNR(B) deposits",
+   "quote": "We have had almost $6 billion FCNR (B) deposit mobilized."
+  }
+ ],
+ "analyst_pressure": [
+  {
+   "analyst_pressure": "Slow sequential deposit and credit growth compared to peers"
+  },
+  {
+   "analyst_pressure": "Increase in absolute gross/net NPAs, fresh slippages, and SMA-2 numbers"
+  },
+  {
+   "analyst_pressure": "Impact of FCNR(B) flows and leverage on margins and cost of funds"
+  }
+ ],
+ "tone": "confident and professional"
+}
+```

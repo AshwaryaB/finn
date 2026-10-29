@@ -1,0 +1,22 @@
+[
+  {"symbol": "RELIANCE",   "name": "Reliance Industries",  "sector": "Energy & Conglomerate"},
+  {"symbol": "TCS",        "name": "Tata Consultancy Services", "sector": "IT Services"},
+  {"symbol": "INFY",       "name": "Infosys",              "sector": "IT Services"},
+  {"symbol": "HDFCBANK",   "name": "HDFC Bank",            "sector": "Banking"},
+  {"symbol": "ICICIBANK",  "name": "ICICI Bank",           "sector": "Banking"},
+  {"symbol": "SBIN",       "name": "State Bank of India",  "sector": "Banking"},
+  {"symbol": "ITC",        "name": "ITC",                  "sector": "FMCG"},
+  {"symbol": "LT",         "name": "Larsen & Toubro",      "sector": "Capital Goods"},
+  {"symbol": "BHARTIARTL", "name": "Bharti Airtel",        "sector": "Telecom"},
+  {"symbol": "MARUTI",     "name": "Maruti Suzuki",        "sector": "Auto"},
+  {"symbol": "SUNPHARMA",  "name": "Sun Pharma",           "sector": "Pharma"},
+  {"symbol": "TATASTEEL",  "name": "Tata Steel",           "sector": "Metals"},
+  {"symbol": "TITAN",      "name": "Titan",                "sector": "Consumer"},
+  {"symbol": "ASIANPAINT", "name": "Asian Paints",         "sector": "Consumer"},
+  {"symbol": "HAL",        "name": "Hindustan Aeronautics","sector": "Defence"},
+  {"symbol": "DIXON",      "name": "Dixon Technologies",   "sector": "Electronics Mfg"},
+  {"symbol": "POLYCAB",    "name": "Polycab India",        "sector": "Cables"},
+  {"symbol": "TRENT",      "name": "Trent",                "sector": "Retail"},
+  {"symbol": "PIDILITIND", "name": "Pidilite Industries",  "sector": "Chemicals"},
+  {"symbol": "DMART",      "name": "Avenue Supermarts",    "sector": "Retail"}
+]

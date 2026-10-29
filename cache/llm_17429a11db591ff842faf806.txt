@@ -1,0 +1,19 @@
+```json
+{"quarter_discussed":"Q4FY26",
+ "guidance":[{"metric":"credit growth","statement":"credit growth at 13% to 14% for the system for FY27","quote":"we expect credit growth at 13% to 14% and deposits at 11% to 12% for FY27 for the system."},
+             {"metric":"deposit growth","statement":"deposits at 11% to 12% for the system for FY27","quote":"we expect credit growth at 13% to 14% and deposits at 11% to 12% for FY27 for the system."},
+             {"metric":"credit cost","statement":"credit cost guidance of 50 basis points for FY27","quote":"we are sticking to our credit cost guidance of 50 basis points even despite whatever happens on the West Asian conflict."},
+             {"metric":"credit growth","statement":"credit growth guidance of 13-15% for the bank","quote":"our credit growth guidance of 13-15%"},
+             {"metric":"Net Interest Margin (NIM)","statement":"domestic NIM to remain above 3% for the full year FY27","quote":"We are still giving a guidance on an annual basis. We are sticking to our NIM of more than 3% for the full year"},
+             {"metric":"cost-to-income ratio","statement":"cost-to-income ratio to remain contained below 50","quote":"our effort is to keep cost -to-income ratio contained below 50."}],
+ "delivered_claims":[{"metric":"net profit","statement":"Net profit reached a record high at Rs 80,032 crores, up 12.88% year-on-year","quote":"Net profit reached a record high at Rs 80,032 crores, up 12.88% year -on-year"},
+                     {"metric":"operating profit","statement":"operating profit supported by 11.25% year-on-year growth","quote":"supported by 11.25% year -on-year growth in operating profit"},
+                     {"metric":"domestic NIM","statement":"domestic NIM at 3.03%","quote":"with a domestic NIM at 3.03%"},
+                     {"metric":"deposit growth","statement":"resilient deposit growth of 11.03% year-on-year","quote":"We achieved resilient deposit growth of 11.03% year-on-year by about Rs 6 trillion"},
+                     {"metric":"Capital Adequacy Ratio (CAR)","statement":"CAR improved by 115 basis points year-on-year to 15.4%","quote":"our CAR has improved by 115 basis points year -on-year and stands at 15.4%"},
+                     {"metric":"Return on Assets (ROA) / Return on Equity (ROE)","statement":"ROA greater than 1% and ROE at 18.5% at the end of Q4 FY26","quote":"ROA consistently greater than 1% and ROE at 18.5% at the end of Q4 FY26."}],
+ "analyst_pressure":["Treasury losses/MTM impact and overhead expenses in Q4",
+                      "Decline in Net Interest Margins (NIM) and yield on advances",
+                      "Impact of expected credit loss (ECL) guidelines and transition preparedness"],
+ "tone":"professional and confident"}
+```

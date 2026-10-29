@@ -1,0 +1,17 @@
+```json
+{"quarter_discussed":"Q2FY26",
+ "guidance":[{"metric":"Credit Growth","statement":"Scheduled commercial banks' credit and deposit growth may remain in the range of 11-12% during FY26.","quote":"deposits and credit growth of scheduled commercial banks may remain in the range of 11-12% during FY26."},
+             {"metric":"Corporate Credit Growth","statement":"Management expects a corporate credit growth of 10% in the next two quarters.","quote":"reach 10% corporate credit growth in the next two quarters."},
+             {"metric":"Net Interest Margin (NIM)","statement":"Management guides that NIM will remain above 3% in Q3 and Q4.","quote":"our guidance still stands good that we will be above 3% in Q3 and Q4."},
+             {"metric":"AUCA Recovery","statement":"AUCA recovery guidance is 2000 crores per quarter.","quote":"AUCA recovery, Chairman's guidance was 2000 crores per quarter"}],
+ "delivered_claims":[{"metric":"Net Interest Margin (NIM)","statement":"Domestic NIMs for the quarter improved by 7 basis points quarter-on-quarter to 3.09%.","quote":"Our domestic NIMs for the quarter improved by 7 basis points quarter-on-quarter to 3.09%"},
+                     {"metric":"Capital Raising","statement":"Raised Rs 25,000 crores of equity capital by way of QIP, the largest ever in India.","quote":"In this quarter, we also raised Rs 25,000 crores of equity capital by way of qualified institutional placement"},
+                     {"metric":"AUCA Recovery","statement":"AUCA recovery for the quarter was 2400 crores.","quote":"we have done 2400 crores and the guidance continues."},
+                     {"metric":"Current Account Market Share","statement":"Acquired current account market share of 185 bps.","quote":"185 bps."},
+                     {"metric":"Liquidity Coverage Ratio (LCR)","statement":"LCR of the bank is 143.8%, up from 139% as on 30th June.","quote":"LCR of the bank is 143.8%, up from 139% as on 30th June."},
+                     {"metric":"Return on Assets (ROA)","statement":"ROA excluding profit in YES Bank is around 1.04%.","quote":"It would be around 1.04."}],
+ "analyst_pressure":["Accounting treatment and impact of the YES Bank stake sale on P&L versus reserves",
+                     "Sustainability of treasury/trading profits and decline compared to Q1",
+                     "Impact and readiness regarding expected credit loss (ECL) guidelines and SMA 1/2 provisions"],
+ "tone":"Confident and optimistic"}
+```

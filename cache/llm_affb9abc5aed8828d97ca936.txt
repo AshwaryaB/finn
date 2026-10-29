@@ -1,0 +1,17 @@
+```json
+{
+  "what_it_does": "Tata Consultancy Services (TCS) is a global technology services, consulting, and business solutions partner that enables enterprise transformation through a full-stack AI strategy, cloud, data, cybersecurity, and digital engineering services.",
+  "segments": [
+    {
+      "name": "AI Services",
+      "description": "Full-stack AI services from infrastructure to intelligence, including agentic AI, specialized foundation models, and AI-led transformations.",
+      "revenue_share": "$2.3 billion annualised revenue"
+    },
+    {
+      "name": "New-age Services",
+      "description": "Services including Cloud, Data, Enterprise Solutions, and Cyber Security.",
+      "revenue_share": "$11.5 billion annualised revenue"
+    }
+  ]
+}
+```

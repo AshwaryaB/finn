@@ -1,0 +1,17 @@
+```json
+{"quarter_discussed": "Q4 & Full Year FY 2026",
+ "guidance": [],
+ "delivered_claims": [
+  {"metric": "Q4 FY2026 sequential constant currency revenue growth", "statement": "Delivered sequential constant currency revenue growth of 1.2% in Q4.", "quote": "We delivered a strong 1.2% sequentially on a constant currency (CC) basis"},
+  {"metric": "Q4 FY2026 TCV", "statement": "Achieved $12 billion in TCV during Q4.", "quote": "Our order book performance was also very strong in Q4, with $12 billion in TCV"},
+  {"metric": "Annualized AI Services revenue", "statement": "Annualized AI services revenue surpassed $2.3 billion.", "quote": "our annualized AI revenues surpassed $2.3 billion"},
+  {"metric": "Full year FY 2026 TCV", "statement": "Delivered $40.7 billion in TCV for the full year FY 2026.", "quote": "we delivered a strong $40.7B in TCV including 5 mega deals."},
+  {"metric": "Full year FY 2026 operating margin", "statement": "Achieved an operating margin of 25% for the full year FY 2026.", "quote": "we delivered an operating margin of 25%. This is the highest operating margin achieved in the last 4 years."}
+ ],
+ "analyst_pressure": [
+  "Agentic AI launches and impact on IT spending/client demand",
+  "FY27 growth outlook and international business recovery trajectory",
+  "SG&A expense levels and margin sustainability/investments"
+ ],
+ "tone": "confident and positive"}
+```

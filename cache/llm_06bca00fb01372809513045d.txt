@@ -1,0 +1,130 @@
+```json
+{
+  "financial_snapshot": {
+    "headline": [
+      {
+        "label": "TTM Revenue",
+        "value": "206,190",
+        "note": "TTM revenue in Rs crore [P&L]"
+      },
+      {
+        "label": "TTM Net Profit",
+        "value": "62,827",
+        "note": "TTM net profit in Rs crore [P&L]"
+      },
+      {
+        "label": "Sep 2026 Net Profit",
+        "value": "17,389",
+        "note": "Quarterly net profit in Rs crore [Quarters]"
+      }
+    ],
+    "summary": "Revenue reached 206,190 crore and Net Profit reached 62,827 crore on a TTM basis [P&L]. Quarterly Net Profit rose to 17,389 in Sep 2026 [Quarters]."
+  },
+  "trajectory": {
+    "growing": [
+      "Revenue increased from 84,836 in Mar 2020 to 195,218 in Mar 2026 [P&L].",
+      "Net Profit grew from 11,225 in Mar 2020 to 57,936 in Mar 2026 [P&L].",
+      "Deposits grew from 800,784 in Mar 2020 to 2,091,539 in Sep 2026 [BS]."
+    ],
+    "compressing": [
+      "Financing Profit remained negative at -36,782 in Mar 2026 compared to -14,152 in Mar 2024 [P&L].",
+      "Financing Margin % expanded negatively to -19% in Mar 2026 from -9% in Mar 2024 [P&L]."
+    ],
+    "summary": "Overall revenue and net profit show strong long-term expansion [P&L], while financing profit remains in negative territory due to elevated interest expense [P&L]."
+  },
+  "balance_sheet": {
+    "points": [
+      "Deposits reached 2,091,539 in Sep 2026, up from 1,830,020 in Mar 2026 [BS].",
+      "Borrowing increased to 295,561 in Sep 2026 from 220,264 in Mar 2026 [BS].",
+      "Total Assets expanded to 3,292,953 in Sep 2026 from 2,914,498 in Mar 2026 [BS]."
+    ],
+    "summary": "Balance sheet size expanded driven by growth in deposits and borrowings as total assets touched 3,292,953 in Sep 2026 [BS]."
+  },
+  "cash_quality": {
+    "points": [
+      "Cash from Operating Activity was 67,325 in Mar 2026 compared to 122,805 in Mar 2025 [CF].",
+      "Free Cash Flow stood at 63,778 in Mar 2026 compared to 118,100 in Mar 2025 [CF].",
+      "Net Cash Flow was 50,957 in Mar 2026 compared to 51,255 in Mar 2025 [CF]."
+    ],
+    "summary": "Operating cash flows and free cash flows moderated in Mar 2026 relative to Mar 2025, but net cash flow remained positive at 50,957 [CF]."
+  },
+  "narrative_vs_numbers": [
+    {
+      "quarter": "Dec 2025",
+      "promised": [
+        "No prior call digest guidance available"
+      ],
+      "delivered": [
+        "Revenue of 48,364 and Net Profit of 13,481 delivered in Dec 2025 [Quarters]."
+      ],
+      "verdict": "unclear",
+      "comment": "No previous guidance was present in transcript digests to evaluate against Dec 2025 numbers [Quarters]."
+    },
+    {
+      "quarter": "Mar 2026",
+      "promised": [
+        "Credit momentum expected to sustain into the fourth quarter [Jan 2026]."
+      ],
+      "delivered": [
+        "Revenue grew to 49,594 and Net Profit rose to 15,681 [Quarters]."
+      ],
+      "verdict": "met",
+      "comment": "Sequential revenue and profit growth reflected sustained business momentum [Quarters], [Jan 2026]."
+    },
+    {
+      "quarter": "Jun 2026",
+      "promised": [
+        "Net interest margins expected to be range-bound in FY27 [Apr 2026]."
+      ],
+      "delivered": [
+        "Revenue reached 52,241 and Net Profit rose to 16,276 [Quarters]."
+      ],
+      "verdict": "met",
+      "comment": "Sequential profit and revenue expansion continued into Q1-2027 [Quarters], [Apr 2026]."
+    },
+    {
+      "quarter": "Sep 2026",
+      "promised": [
+        "Net interest margin expected to remain range-bound [Jul 2026]."
+      ],
+      "delivered": [
+        "Revenue rose to 55,992 and Net Profit reached 17,389 [Quarters]."
+      ],
+      "verdict": "met",
+      "comment": "Quarterly revenue and net profit expanded further in Sep 2026 [Quarters], [Jul 2026]."
+    }
+  ],
+  "guidance": [
+    {
+      "metric": "net interest margin",
+      "statement": "Management expects net interest margins to remain range-bound under current conditions and assuming no policy rate movements.",
+      "quote": "Based on current conditions and assuming no policy rate movements, I would say it should be range bound.",
+      "call": "Jul 2026"
+    },
+    {
+      "metric": "net interest margin",
+      "statement": "management expects net interest margins to be range-bound in FY27",
+      "quote": "We do expect NIMs to be range-bound in FY27.",
+      "call": "Apr 2026"
+    },
+    {
+      "metric": "Loan Growth",
+      "statement": "Management expects credit momentum to sustain into the fourth quarter.",
+      "quote": "we see that momentum sustaining into the fourth quarter as well",
+      "call": "Jan 2026"
+    }
+  ],
+  "bull_bear": {
+    "bull": [
+      "Net profit expanded consistently reaching 17,389 in Sep 2026 quarter [Quarters].",
+      "Total deposits grew to 2,091,539 in Sep 2026 from 1,830,020 in Mar 2026 [BS].",
+      "ROE maintained healthy levels at 16% in Mar 2026 [Ratios]."
+    ],
+    "bear": [
+      "Financing loss widened to -36,782 in Mar 2026 from -14,152 in Mar 2024 [P&L].",
+      "Operating Cash Flow declined to 67,325 in Mar 2026 from 122,805 in Mar 2025 [CF].",
+      "Analysts raised concerns regarding RBI foreign currency regulations and treasury losses [Apr 2026]."
+    ]
+  }
+}
+```

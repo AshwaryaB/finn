@@ -1,0 +1,50 @@
+```json
+{
+ "quarter_discussed": "Q3-2026",
+ "guidance": [
+  {
+   "metric": "Net interest margin (NIM)",
+   "statement": "Management expects net interest margins to remain range-bound reflecting benchmark repricing and competition.",
+   "quote": "Looking ahead, we do expect NIMs to remain more or less range bound, reflecting the repricing of the external benchmarks on loans and investments"
+  },
+  {
+   "metric": "Loan growth",
+   "statement": "Management expects credit momentum to sustain into the fourth quarter.",
+   "quote": "And we see that momentum sustaining into the fourth quarter as well."
+  }
+ },
+ "delivered_claims": [
+  {
+   "metric": "Net interest income",
+   "statement": "Net interest income increased by 7.7% year-on-year to ₹21,932 crore in Q3-2026.",
+   "quote": "Net interest income increased by 7.7% year-on-year to ₹21,932 crore in Q3-2026"
+  },
+  {
+   "metric": "Fee income",
+   "statement": "Fee income grew by 6.3% year-on-year to ₹6,572 crore in Q3-2026.",
+   "quote": "Fee income grew by 6.3% year-on-year to ₹6,572 crore in Q3-2026"
+  },
+  {
+   "metric": "Core operating profit",
+   "statement": "Core operating profit grew by 6.0% year-on-year to ₹17,513 crore in Q3-2026.",
+   "quote": "Core operating profit grew by 6.0% year-on-year to ₹17,513 crore in Q3-2026"
+  },
+  {
+   "metric": "Capital adequacy ratio",
+   "statement": "Total capital adequacy ratio was 17.34% including profits for 9M-2026.",
+   "quote": "total capital adequacy ratio was 17.34%"
+  },
+  {
+   "metric": "Domestic loan portfolio",
+   "statement": "The domestic loan portfolio grew by 11.5% year-on-year at December 31, 2025.",
+   "quote": "The domestic loan portfolio grew by 11.5% year-on-year at December 31, 2025"
+  }
+ ],
+ "analyst_pressure": [
+  "RBI directed agricultural priority sector lending (PSL) standard asset provision and compliance details",
+  "CEO Mr. Bakhshi's two-year extension instead of a typical three-year term",
+  "Credit card portfolio growth slowdown and transactor behavior"
+ ],
+ "tone": "cautious and defensive"
+}
+```

@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>FINN</title>
+<link rel="icon" href="data:,">
+<script>try{var t=JSON.parse(localStorage.getItem("theme"));if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<style>
+:root{color-scheme:light;--bg:#fff;--tile:#f5f5f7;--ink:#1d1d1f;--mute:#6e6e73;--line:rgba(0,0,0,.12);--blue:#0071e3;--up:#1a8a3b;--down:#d70015;--amber:#b25e00;--glass:rgba(255,255,255,.78);--shadow:0 1px 3px rgba(0,0,0,.14)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#000;--tile:#1d1d1f;--ink:#f5f5f7;--mute:#86868b;--line:rgba(255,255,255,.16);--blue:#2997ff;--up:#30d158;--down:#ff453a;--amber:#ff9f0a;--glass:rgba(22,22,23,.78);--shadow:0 1px 3px rgba(0,0,0,.6)}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#000;--tile:#1d1d1f;--ink:#f5f5f7;--mute:#86868b;--line:rgba(255,255,255,.16);--blue:#2997ff;--up:#30d158;--down:#ff453a;--amber:#ff9f0a;--glass:rgba(22,22,23,.78);--shadow:0 1px 3px rgba(0,0,0,.6)}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.47 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:-.011em;-webkit-font-smoothing:antialiased}
+button,input{font:inherit;color:inherit;letter-spacing:inherit}
+button{cursor:pointer}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+
+/* global nav (apple.com-style: short words, translucent, hairline) */
+.gnav{position:sticky;top:0;z-index:20;height:48px;background:var(--glass);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0);box-sizing:content-box}
+.gnav-in{max-width:1024px;height:48px;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:center;position:relative}
+.brand{font-weight:700;letter-spacing:.06em;font-size:15px}
+#topnav{display:none;gap:6px;margin-left:36px}
+.tl{border:0;background:none;color:var(--mute);font-size:13px;padding:6px 12px;border-radius:980px}
+.tl:hover{color:var(--ink)}.tl.on{color:var(--ink);font-weight:600}
+.themebtn{position:absolute;right:14px;top:50%;transform:translateY(-50%);width:36px;height:36px;border:0;background:none;color:var(--mute);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.themebtn:hover{color:var(--ink);background:var(--tile)}
+.badge{background:var(--down);color:#fff;border-radius:9px;font:600 10px/1 inherit;font-style:normal;padding:3px 6px;margin-left:6px;vertical-align:2px}
+
+main{max-width:760px;margin:0 auto;padding:0 18px calc(110px + env(safe-area-inset-bottom,0))}
+main.wide{max-width:1024px}
+
+/* tab bar (mobile) */
+#tabbar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;background:var(--glass);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-top:1px solid var(--line);padding:6px 0 calc(6px + env(safe-area-inset-bottom,0))}
+#tabbar button{flex:1;border:0;background:none;color:var(--mute);display:flex;flex-direction:column;align-items:center;gap:2px;font-size:10.5px;font-weight:500;position:relative}
+#tabbar button.on{color:var(--blue)}
+#tabbar .badge{position:absolute;top:-2px;left:calc(50% + 6px);margin:0}
+@media (min-width:740px){#topnav{display:flex}#tabbar{display:none}main{padding-bottom:80px}}
+
+/* hero: one idea, big type, centered */
+.hero{text-align:center;padding:52px 0 26px}
+h1{font-size:clamp(40px,9vw,64px);line-height:1.04;font-weight:700;letter-spacing:-.04em;margin:0}
+.lead{font-size:clamp(17px,2.6vw,24px);line-height:1.3;font-weight:500;color:var(--mute);margin:14px auto 0;max-width:34em;letter-spacing:-.015em}
+.center{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;margin:6px 0 10px}
+
+/* segmented control */
+.seg{display:inline-flex;background:var(--tile);border-radius:980px;padding:3px}
+.seg button{border:0;background:none;padding:7px 16px;border-radius:980px;font-size:14px;font-weight:500;color:var(--mute)}
+.seg button.on{background:var(--ink);color:var(--bg);font-weight:600}
+.hrs{width:90px;padding:8px 12px;border-radius:980px;border:1px solid var(--line);background:var(--bg);font-size:14px}
+
+/* group headings */
+.gh{display:flex;align-items:baseline;gap:10px;font-size:28px;font-weight:700;letter-spacing:-.03em;margin:44px 2px 6px}
+.gh span{font-size:15px;font-weight:600;color:var(--mute);letter-spacing:0}
+
+/* tiles */
+.tile{background:var(--tile);border-radius:24px;padding:24px 24px 20px;margin:14px 0;animation:rise .5s cubic-bezier(.2,.7,.2,1) both}
+.tile.big{padding:34px 28px 30px;margin:18px 0}
+.tile.compact{padding:16px 18px;border-radius:18px;margin:10px 0}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}}
+.eyebrow-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.eyebrow.p1{color:var(--down)}.eyebrow.p2{color:var(--blue)}.eyebrow.p3{color:var(--mute)}.eyebrow.sched{color:var(--amber)}
+.time{margin-left:auto;font-size:13px;color:var(--mute)}
+.sym{font-size:28px;line-height:1.12;font-weight:700;letter-spacing:-.03em;margin:8px 0 6px}
+.sym small{display:block;font-size:14px;font-weight:500;color:var(--mute);letter-spacing:-.01em;margin-top:2px}
+.body{font-size:16px;line-height:1.45;margin:6px 0 14px}
+.body.small{font-size:14px;color:var(--mute);margin:4px 0 8px}
+.clamp{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.pill{border:0;background:var(--blue);color:#fff;border-radius:980px;padding:9px 20px;font-size:15px;font-weight:500}
+.pill:hover{filter:brightness(1.08)}.pill:disabled{opacity:.5;cursor:default}
+.pill.big{padding:14px 34px;font-size:17px}
+.link{font-size:15px}
+.insight{margin-top:18px;padding-top:18px;border-top:1px solid var(--line);animation:rise .4s both}
+.muted,.mute{color:var(--mute)}
+.err{color:var(--down);font-size:14px;margin:8px 0}
+.note{color:var(--mute);font-size:12px;line-height:1.4;margin-top:10px}
+.cap{color:var(--mute);font-size:13px;margin-bottom:12px}
+.warn{color:var(--amber)}
+
+/* metrics */
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.metric{background:var(--bg);border-radius:18px;padding:16px}
+.mlabel{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--mute)}
+.mval{font-size:28px;font-weight:700;letter-spacing:-.03em;font-variant-numeric:tabular-nums;margin:4px 0 8px;line-height:1.1}
+.mval.sm{font-size:22px}
+.dchips{display:flex;gap:6px;flex-wrap:wrap}
+.dchip{font-size:12px;font-weight:600;border-radius:980px;padding:3px 9px;background:var(--tile)}
+.dchip.up{color:var(--up)}.dchip.down{color:var(--down)}.dchip.na{color:var(--mute)}
+
+/* management */
+.person{margin:0 0 14px}
+.person h4{font-size:22px;letter-spacing:-.02em;margin:0 0 2px}
+.chipx{display:inline-block;font-size:12px;font-weight:600;border-radius:980px;padding:2px 10px;background:var(--bg);color:var(--blue);margin-left:8px;vertical-align:3px}
+
+/* alerts */
+.group{background:var(--tile);border-radius:24px;padding:10px 24px 22px;margin:8px 0 22px}
+.setrow{display:flex;justify-content:space-between;align-items:baseline;padding-top:16px;font-size:17px}
+.setrow b{font-size:22px;letter-spacing:-.02em}
+.hint{color:var(--mute);font-size:13px;margin:0 0 8px}
+input[type=range]{width:100%;accent-color:var(--blue);margin:8px 0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}
+.tag{border:1px solid var(--line);background:var(--bg);border-radius:980px;padding:7px 14px;font-size:14px;font-weight:500}
+.tag.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.switch{width:51px;height:31px;border-radius:980px;border:0;background:var(--line);position:relative;flex:none;transition:background .2s}
+.switch::after{content:"";position:absolute;top:2px;left:2px;width:27px;height:27px;border-radius:50%;background:#fff;box-shadow:var(--shadow);transition:transform .2s}
+.switch.on{background:#34c759}.switch.on::after{transform:translateX(20px)}
+.mk{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.mk .pct{font-size:28px;font-weight:700;letter-spacing:-.03em}
+.up{color:var(--up)}.down{color:var(--down)}
+
+/* research */
+.search{display:flex;gap:10px;margin:6px 0 14px}
+.search input{flex:1;min-width:0;height:52px;border-radius:16px;border:0;background:var(--tile);padding:0 18px;font-size:19px;outline:none}
+.search input:focus{box-shadow:0 0 0 3px color-mix(in srgb,var(--blue) 40%,transparent)}
+.quick{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:6px}
+.bar{height:4px;background:var(--tile);border-radius:4px;overflow:hidden;margin:18px 0 8px}
+.bar i{display:block;height:100%;width:0;background:var(--blue);border-radius:4px;transition:width .8s ease}
+.stage{text-align:center;color:var(--mute);font-size:14px;min-height:20px}
+.localnav{position:sticky;top:calc(48px + env(safe-area-inset-top,0));z-index:10;background:var(--glass);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);display:flex;align-items:center;gap:4px;padding:10px 0;margin:0 -18px;padding-left:18px;padding-right:18px;overflow-x:auto;white-space:nowrap;border-bottom:1px solid var(--line);scrollbar-width:none}
+.localnav::-webkit-scrollbar{display:none}
+.localnav b{font-size:17px;margin-right:12px}
+.localnav a{font-size:13px;color:var(--mute);padding:5px 11px;border-radius:980px;cursor:pointer}
+.localnav a:hover{color:var(--ink);background:var(--tile);text-decoration:none}
+.stmt{font-size:clamp(22px,3.6vw,30px);line-height:1.18;font-weight:700;letter-spacing:-.03em;margin:8px 0 18px}
+.bul{margin:6px 0;padding-left:20px}.bul li{margin:7px 0;font-size:16px;line-height:1.42}
+.cols2{display:grid;gap:14px}@media (min-width:860px){.cols2{grid-template-columns:1fr 1fr}.cols2>.tile{margin:0}}
+.col h4{font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin:6px 0 2px}
+.seg-item{margin:12px 0}.seg-item b{font-weight:600}
+.vchip{font-size:12px;font-weight:700;border-radius:980px;padding:3px 11px;margin-left:10px;text-transform:uppercase;letter-spacing:.04em;background:var(--bg)}
+.vchip.met{color:var(--up)}.vchip.missed{color:var(--down)}.vchip.mixed,.vchip.unclear{color:var(--amber)}
+.qblock{padding:18px 0;border-top:1px solid var(--line)}.qblock:first-of-type{border-top:0;padding-top:4px}
+.qblock h4{font-size:19px;margin:0 0 6px;letter-spacing:-.02em}
+.lbl{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin-top:10px}
+.quote{border-left:3px solid var(--line);padding-left:12px;color:var(--mute);font-size:15px;margin:8px 0 0}
+.foot{max-width:760px;margin:30px auto 0;padding:0 18px;text-align:center;color:var(--mute);font-size:12px}
+
+/* routine filings */
+details.routine{margin:36px 0 0}
+details.routine summary{cursor:pointer;color:var(--blue);font-size:17px;padding:10px 2px;list-style:none}
+details.routine summary::-webkit-details-marker{display:none}
+details.routine summary::after{content:" ›"}details.routine[open] summary::after{content:" ⌄"}
+
+/* skeletons */
+.sk i{display:block;height:14px;border-radius:8px;margin:12px 0;background:linear-gradient(90deg,var(--bg) 25%,transparent 50%,var(--bg) 75%);background-size:300% 100%;animation:sh 1.3s linear infinite;opacity:.8}
+.sk i:first-child{width:35%}.sk i:nth-child(2){width:80%}.sk i:nth-child(3){width:60%}
+.sk.inline i{margin:8px 0}
+@keyframes sh{to{background-position:-300% 0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="gnav"><div class="gnav-in"><span class="brand">FINN</span><nav id="topnav"></nav><button class="themebtn" id="themebtn" aria-label="Switch light or dark mode"></button></div></header>
+<main id="view"></main>
+<div class="foot"><b>FINN</b> v4 · FINN reads public exchange filings, annual reports and concall transcripts. Figures are extracted automatically; a ⚠ means a number could not be matched to the source text. Not investment advice.</div>
+<nav id="tabbar"></nav>
+<script>
+const LABEL={results:"Results","M&A":"M&A",fund_raise:"Fund raise",management_change:"Management change",litigation:"Litigation",pledging:"Pledging",earnings_call:"Earnings call",credit_rating:"Credit rating",dividend:"Dividend",bonus_split:"Bonus / split",capex:"Capex",insider_trading:"Insider trading",press_release:"News",investor_meetings:"Investor meet",postal_ballot:"Postal ballot",agm_egm:"AGM / EGM",unclassified:"Routine"};
+const ALERT_TYPES=["results","M&A","management_change","fund_raise","litigation","pledging","credit_rating","dividend","capex"];
+const WINDOWS=[[24,"24h"],[72,"3d"],[168,"7d"],[720,"30d"]];
+const $=(s,e=document)=>e.querySelector(s);
+function h(tag,props={},...kids){const e=document.createElement(tag);for(const[k,v]of Object.entries(props)){if(k==="class")e.className=v;else if(k.startsWith("on"))e.addEventListener(k.slice(2),v);else if(v!=null)e.setAttribute(k,v)}for(const kid of kids.flat(Infinity)){if(kid==null||kid===false)continue;e.append(kid.nodeType?kid:document.createTextNode(String(kid)))}return e}
+async function api(path,opts){const r=await fetch(path,opts);if(!r.ok)throw new Error((await r.text()).slice(0,200)||r.status);return r.json()}
+const post=(p,b)=>api(p,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(b)});
+const fmt=v=>v==null?"—":Number(v).toLocaleString("en-IN",{maximumFractionDigits:2});
+function ago(iso){const m=Math.max(0,Math.round((Date.now()-new Date(iso))/6e4));if(m<60)return m+"m ago";if(m<1440)return Math.round(m/60)+"h ago";return Math.round(m/1440)+"d ago"}
+const winLabel=n=>n<48?`in the last ${n} hours`:`in the last ${Math.round(n/24)} days`;
+const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+function root(wide){const v=$("#view");v.className=wide?"wide":"";v.replaceChildren();window.scrollTo(0,0);return v}
+const ICONS={
+ today:'<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4.5"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>',
+ alerts:'<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 17h12l-1.5-2v-4a4.5 4.5 0 0 0-9 0v4L6 17z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>',
+ research:'<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg>'};
+function icon(n){const s=h("span");s.innerHTML=ICONS[n];return s}
+function skeleton(n){return h("div",{},Array.from({length:n||3},()=>h("div",{class:"tile sk"},h("i"),h("i"),h("i"))))}
+
+/* ---------- nav ---------- */
+const TABS=[["today","Today"],["alerts","Alerts"],["research","Research"]];
+let tab="today",alertCount=0;
+function renderNav(){
+  $("#topnav").replaceChildren(...TABS.map(([k,l])=>h("button",{class:"tl"+(tab===k?" on":""),onclick:()=>navTo(k)},l,k==="alerts"&&alertCount?h("i",{class:"badge"},alertCount):null)));
+  $("#tabbar").replaceChildren(...TABS.map(([k,l])=>h("button",{class:tab===k?"on":"",onclick:()=>navTo(k)},icon(k),h("span",{},l),k==="alerts"&&alertCount?h("i",{class:"badge"},alertCount):null)));
+}
+function navTo(k){tab=k;renderNav();({today:viewToday,alerts:viewAlerts,research:viewResearch})[k]()}
+
+/* ---------- insight renderers ---------- */
+function dchip(label,p){return p==null?h("span",{class:"dchip na"},label+" n.m."):h("span",{class:"dchip "+(p>=0?"up":"down")},`${label} ${p>0?"+":""}${p.toFixed(1)}%`)}
+function renderEnrich(r){
+  if(r.type==="error")return h("div",{class:"err"},r.error);
+  if(r.type==="summary")return h("p",{class:"body",style:"margin:0"},r.summary);
+  if(r.type==="management"){
+    if(!r.events.length)return h("div",{class:"mute"},"No named person found in the filing.");
+    return h("div",{},r.events.map(e=>h("div",{class:"person"},
+      h("h4",{},e.person,h("span",{class:"chipx"},e.action||"change"),!e.name_verified&&h("span",{class:"warn",title:"Name not found in filing text"}," ⚠")),
+      h("div",{class:"mute",style:"font-size:14px"},[e.role,e.effective_date&&("effective "+e.effective_date)].filter(Boolean).join(" · ")),
+      h("p",{class:"body",style:"margin:8px 0"},e.background_in_filing||"The filing states no background for this person."),
+      h("a",{class:"link",href:e.linkedin_url,target:"_blank",rel:"noopener"},"Look up on LinkedIn ›"))))}
+  if(r.type==="results"){
+    const ms=r.metrics.filter(m=>!(r.ebitda_na&&m.key==="ebitda"));
+    return h("div",{},
+      h("div",{class:"cap"},[r.quarter_label,r.basis,r.unit].filter(Boolean).join(" · ")),
+      h("div",{class:"metrics"},ms.map(m=>h("div",{class:"metric"},
+        h("div",{class:"mlabel"},m.label,!m.verified&&h("span",{class:"warn",title:"Not found literally in the filing text"}," ⚠")),
+        h("div",{class:"mval"},fmt(m.current)),
+        h("div",{class:"dchips"},dchip("QoQ",m.qoq_pct),dchip("YoY",m.yoy_pct))))),
+      r.ebitda_na&&h("div",{class:"note"},"EBITDA is not shown: finance costs or depreciation are not in this filing (typical for banks)."),
+      h("div",{class:"note"},r.note))}
+  return h("div",{},JSON.stringify(r))}
+
+/* ---------- Today ---------- */
+let hours=store.get("hours",24);
+function filingCard(it,compact){
+  const box=h("article",{class:"tile"+(compact?" compact":"")}),out=h("div",{class:"insight",hidden:""});let loaded=false;
+  const btnText=it.upcoming?"Summarise":({results:"Read the numbers",management_change:"Who is this?"}[it.category]||"Summarise");
+  const show=!compact&&it.category!=="unclassified";
+  box.append(
+    h("div",{class:"eyebrow-row"},h("span",{class:"eyebrow p"+it.priority},LABEL[it.category]||it.category),it.upcoming&&h("span",{class:"eyebrow sched"},"Scheduled"),h("span",{class:"time"},ago(it.time))),
+    h("h3",{class:"sym"},it.symbol,!compact&&it.company&&h("small",{},it.company.replace(/\s+Limited$/i,""))),
+    h("p",{class:compact?"body small":"body clamp"},it.text||it.desc),
+    h("div",{class:"actions"},
+      show&&h("button",{class:"pill",onclick:async()=>{
+        if(loaded){out.hidden=!out.hidden;return}
+        loaded=true;out.hidden=false;out.replaceChildren(h("div",{class:"sk inline"},h("i"),h("i")));
+        try{out.replaceChildren(renderEnrich(await post("/api/enrich",{category:it.category,company:it.company||it.symbol,text:it.text,pdf:it.pdf})))}
+        catch(e){loaded=false;out.replaceChildren(h("div",{class:"err"},"Could not read it: "+e.message))}}},btnText),
+      it.pdf&&h("a",{class:"link",href:it.pdf,target:"_blank",rel:"noopener"},"View filing ›")),
+    out);
+  return box}
+async function viewToday(){
+  const v=root();
+  const lead=h("p",{class:"lead"},"Reading today’s filings…");
+  v.append(h("section",{class:"hero"},h("h1",{},"What changed."),lead));
+  const custom=h("input",{type:"number",min:1,max:720,placeholder:"hours",class:"hrs",hidden:"",onchange:e=>{const n=parseInt(e.target.value);if(n>0){hours=n;store.set("hours",n);viewToday()}}});
+  const seg=h("div",{class:"seg"},WINDOWS.map(([n,l])=>h("button",{class:hours===n?"on":"",onclick:()=>{hours=n;store.set("hours",n);viewToday()}},l)));
+  const isCustom=!WINDOWS.some(([n])=>n===hours);
+  seg.append(h("button",{class:isCustom?"on":"",onclick:()=>{custom.hidden=false;custom.focus()}},isCustom?hours+"h":"Custom"));
+  v.append(h("div",{class:"center"},seg,custom));
+  const list=h("div",{});v.append(list);list.append(skeleton(3));
+  try{
+    const d=await api("/api/digest?hours="+hours);
+    list.replaceChildren();
+    lead.textContent=d.counts.shown?`${d.counts.shown} filings matter ${winLabel(hours)}. ${d.counts.collapsed} routine ones are tucked away.`:`Nothing material ${winLabel(hours)}.`;
+    const group=(title,items)=>items.length?h("section",{},h("h2",{class:"gh"},title,h("span",{},items.length)),items.map(i=>filingCard(i))):null;
+    list.append(group("Needs attention",d.items.filter(i=>i.priority===1)),group("Worth a look",d.items.filter(i=>i.priority===2)));
+    if(d.collapsed.length)list.append(h("details",{class:"routine"},h("summary",{},`${d.collapsed.length} routine filings`),d.collapsed.map(i=>filingCard(i,true))));
+    const bad=Object.keys(d.errors||{});
+    if(bad.length)list.append(h("div",{class:"err",style:"text-align:center;margin-top:24px"},"Could not reach NSE for: "+bad.join(", ")));
+  }catch(e){list.replaceChildren(h("div",{class:"err",style:"text-align:center"},"Failed to load: "+e.message));lead.textContent="Something went wrong."}}
+
+/* ---------- Alerts ---------- */
+const cfg=store.get("alertcfg",{vol:2,pct:3,types:["results","M&A","management_change"],auto:false});
+let timer=null;const seen=new Set();
+async function fetchAlerts(){return api(`/api/alerts?vol_mult=${cfg.vol}&pct=${cfg.pct}&types=${encodeURIComponent(cfg.types.join(","))}&hours=24`)}
+function notify(msg){try{if("Notification"in window&&Notification.permission==="granted")new Notification("FINN",{body:msg})}catch(e){}}
+async function pollOnce(){
+  const d=await fetchAlerts();alertCount=d.announcements.length+d.market.length;renderNav();
+  const fresh=[...d.market.map(m=>"m"+m.symbol+m.date),...d.announcements.map(a=>"a"+a.id)].filter(k=>!seen.has(k));
+  if(seen.size&&fresh.length)notify(fresh.length+" new alert(s)");fresh.forEach(k=>seen.add(k));return d}
+function setAuto(on){clearInterval(timer);if(on){pollOnce().catch(()=>{});timer=setInterval(()=>pollOnce().catch(()=>{}),120000)}}
+function marketCard(m){return h("article",{class:"tile"},
+  h("div",{class:"eyebrow-row"},h("span",{class:"eyebrow p2"},"Market"),h("span",{class:"time"},m.date)),
+  h("div",{class:"mk"},h("h3",{class:"sym",style:"margin:6px 0"},m.symbol),h("span",{class:"pct "+(m.pct>=0?"up":"down")},(m.pct>=0?"▲ ":"▼ ")+Math.abs(m.pct).toFixed(2)+"%")),
+  h("div",{class:"mute",style:"font-size:15px"},m.reasons.map(r=>r.detail).join(" · ")))}
+async function viewAlerts(){
+  const v=root();
+  v.append(h("section",{class:"hero"},h("h1",{},"You set the bar."),h("p",{class:"lead"},"Tell FINN what “unusual” means. It watches so you don’t have to.")));
+  const vl=h("b",{},cfg.vol+"×"),pl=h("b",{},"±"+cfg.pct+"%");
+  const vol=h("input",{type:"range",min:1,max:6,step:.5,value:cfg.vol,oninput:e=>{cfg.vol=+e.target.value;vl.textContent=cfg.vol+"×";store.set("alertcfg",cfg)}});
+  const pct=h("input",{type:"range",min:1,max:10,step:.5,value:cfg.pct,oninput:e=>{cfg.pct=+e.target.value;pl.textContent="±"+cfg.pct+"%";store.set("alertcfg",cfg)}});
+  const tags=h("div",{class:"tags"},ALERT_TYPES.map(t=>{const b=h("button",{class:"tag"+(cfg.types.includes(t)?" on":""),onclick:()=>{cfg.types=cfg.types.includes(t)?cfg.types.filter(x=>x!==t):[...cfg.types,t];b.classList.toggle("on");store.set("alertcfg",cfg)}},LABEL[t]);return b}));
+  const sw=h("button",{class:"switch"+(cfg.auto?" on":""),role:"switch","aria-checked":String(cfg.auto),onclick:async()=>{
+    cfg.auto=!cfg.auto;sw.classList.toggle("on",cfg.auto);sw.setAttribute("aria-checked",String(cfg.auto));store.set("alertcfg",cfg);
+    if(cfg.auto&&"Notification"in window&&Notification.permission==="default")await Notification.requestPermission();setAuto(cfg.auto)}});
+  v.append(h("section",{class:"group"},
+    h("div",{class:"setrow"},h("span",{},"Volume above"),vl),h("div",{class:"hint"},"times its 20-day average"),vol,
+    h("div",{class:"setrow"},h("span",{},"Daily price move beyond"),pl),h("div",{class:"hint"},"vs the previous close"),pct,
+    h("div",{class:"setrow"},h("span",{},"Announcement types")),tags,
+    h("div",{class:"setrow",style:"align-items:center;margin-top:8px"},h("span",{},"Watch every 2 minutes"),sw),
+    h("div",{class:"hint",style:"margin-top:6px"},"Keep this tab open. New alerts arrive as browser notifications.")));
+  const res=h("div",{});const run=h("button",{class:"pill big"},"Check now");
+  v.append(h("div",{class:"center"},run),res);
+  run.onclick=async()=>{
+    run.disabled=true;res.replaceChildren(skeleton(2));
+    try{
+      const d=await pollOnce();res.replaceChildren();
+      res.append(h("h2",{class:"gh"},"Market",h("span",{},d.market.length)));
+      if(d.market.length)d.market.forEach(m=>res.append(marketCard(m)));else res.append(h("div",{class:"tile mute"},"No unusual price or volume moves at these thresholds."));
+      res.append(h("h2",{class:"gh"},"Announcements",h("span",{},d.announcements.length)));
+      if(d.announcements.length)d.announcements.forEach(i=>res.append(filingCard(i)));else res.append(h("div",{class:"tile mute"},"None of your chosen types in the last 24 hours."));
+      if(d.errors&&d.errors.prices)res.append(h("div",{class:"err"},"Prices unavailable: "+d.errors.prices));
+    }catch(e){res.replaceChildren(h("div",{class:"err"},"Could not check: "+e.message))}
+    run.disabled=false}}
+
+/* ---------- Research ---------- */
+const ul=a=>h("ul",{class:"bul"},(a||[]).map(x=>h("li",{},x)));
+const sec=(id,eyebrow,stmt,...kids)=>h("section",{class:"tile big",id},h("div",{class:"eyebrow"},eyebrow),stmt?h("h2",{class:"stmt"},stmt):null,kids);
+function renderResearch(r){
+  const s=r.sections||{},out=h("div",{}),links=[];
+  const add=(id,label,el)=>{if(!el)return null;links.push([id,label]);return el};
+  const biz=add("s-biz","Business",r.business&&sec("s-biz","Business",r.business.what_it_does,(r.business.segments||[]).map(g=>h("div",{class:"seg-item"},h("b",{},g.name),g.revenue_share?h("span",{class:"mute"}," · "+g.revenue_share):null,h("div",{class:"mute",style:"font-size:15px"},g.description)))));
+  const fs=s.financial_snapshot,fin=add("s-fin","Financials",fs&&sec("s-fin","Financial snapshot",fs.summary,h("div",{class:"metrics"},(fs.headline||[]).map(x=>h("div",{class:"metric"},h("div",{class:"mlabel"},x.label),h("div",{class:"mval sm"},x.value),h("div",{class:"note",style:"margin-top:0"},x.note))))));
+  const tj=s.trajectory,traj=add("s-traj","Trajectory",tj&&sec("s-traj","Trajectory",tj.summary,h("div",{class:"cols2",style:"gap:24px"},h("div",{class:"col"},h("h4",{class:"up"},"Growing"),ul(tj.growing)),h("div",{class:"col"},h("h4",{class:"down"},"Compressing"),ul(tj.compressing)))));
+  const bs=s.balance_sheet,bst=add("s-bs","Balance sheet",bs&&sec("s-bs","Balance sheet",bs.summary,ul(bs.points)));
+  const cq=s.cash_quality,cqt=add("s-cash","Cash quality",cq&&sec("s-cash","Cash quality",cq.summary,ul(cq.points)));
+  const nv=s.narrative_vs_numbers,nvt=add("s-nv","Said vs did",nv&&nv.length?sec("s-nv","Narrative vs numbers","What management promised, and what the numbers say.",nv.map(q=>h("div",{class:"qblock"},h("h4",{},q.quarter,h("span",{class:"vchip "+(q.verdict||"unclear")},q.verdict||"unclear")),h("div",{class:"lbl"},"Promised"),ul(q.promised),h("div",{class:"lbl"},"Delivered"),ul(q.delivered),q.comment?h("div",{class:"note"},q.comment):null))):null);
+  const gd=s.guidance,gdt=add("s-guid","Guidance",gd&&gd.length?sec("s-guid","Guidance","What management has explicitly guided on.",gd.map(g=>h("div",{class:"qblock"},h("h4",{},g.metric,g.call?h("span",{class:"mute",style:"font-size:13px;font-weight:500;margin-left:10px"},g.call):null),h("div",{},g.statement),g.quote?h("div",{class:"quote"},"“"+g.quote+"”"):null))):null);
+  const bb=s.bull_bear,bbt=add("s-bb","Bull / Bear",bb&&h("section",{class:"cols2",id:"s-bb",style:"margin:18px 0"},h("div",{class:"tile big"},h("div",{class:"eyebrow up"},"Bull case"),ul(bb.bull)),h("div",{class:"tile big"},h("div",{class:"eyebrow down"},"Bear case"),ul(bb.bear))));
+  out.append(biz,fin,traj);
+  if(bst&&cqt)out.append(h("div",{class:"cols2",style:"margin:18px 0"},bst,cqt));else out.append(bst,cqt);
+  out.append(nvt,gdt,bbt);
+  const src=r.sources||{};
+  out.append(h("div",{class:"note",style:"text-align:center;margin:26px 0 0"},`Grounded in ${src.annual_report||"no annual report"}, concalls ${(src.transcripts||[]).join(", ")||"none"}, and ${(src.tables||[]).join(", ")||"no"} tables (${r.basis}). No news or broker views.`),(r.warnings||[]).map(w=>h("div",{class:"warn note",style:"text-align:center"},"⚠ "+w)));
+  const nav=h("div",{class:"localnav"},h("b",{},r.symbol),links.map(([id,l])=>h("a",{onclick:()=>{const t=document.getElementById(id);if(t)t.scrollIntoView({behavior:"smooth",block:"start"})}},l)));
+  return h("div",{},nav,out)}
+function stagePct(s){const m=(s||"").match(/\((\d+)\/(\d+)\)/);if(/Fetching/.test(s))return 8;if(m)return 10+Math.round(45*(+m[1]/+m[2]));if(/annual/i.test(s))return 68;if(/Analys/.test(s))return 88;return 4}
+async function viewResearch(){
+  const v=root(true);
+  v.append(h("section",{class:"hero"},h("h1",{},"Ask about any company."),h("p",{class:"lead"},"Any NSE ticker. Grounded in the annual report and concall transcripts only.")));
+  const inp=h("input",{type:"text",placeholder:"Ticker, e.g. RELIANCE",autocapitalize:"characters",autocomplete:"off",spellcheck:"false"});
+  const btn=h("button",{class:"pill big"},"Analyse");
+  const quick=h("div",{class:"quick"});
+  const bar=h("i"),stage=h("div",{class:"stage"}),barWrap=h("div",{class:"bar",hidden:""},bar),res=h("div",{});
+  v.append(h("div",{style:"max-width:560px;margin:0 auto"},h("div",{class:"search"},inp,btn),quick,barWrap,stage),res);
+  api("/api/portfolio").then(p=>p.slice(0,8).forEach(c=>quick.append(h("button",{class:"tag",onclick:()=>{inp.value=c.symbol;btn.click()}},c.symbol)))).catch(()=>{});
+  btn.onclick=async()=>{
+    const sym=inp.value.trim().toUpperCase();if(!sym)return;
+    btn.disabled=true;res.replaceChildren();barWrap.hidden=false;bar.style.width="4%";stage.textContent="Starting…";
+    try{
+      const{job}=await post("/api/research",{symbol:sym});
+      for(;;){
+        const j=await api("/api/research/"+job);
+        if(j.status==="running"){stage.textContent=j.stage+"…";bar.style.width=stagePct(j.stage)+"%";await new Promise(r=>setTimeout(r,2000));continue}
+        if(j.status==="error"){stage.replaceChildren(h("span",{class:"err"},j.error));barWrap.hidden=true;break}
+        bar.style.width="100%";stage.textContent="";setTimeout(()=>{barWrap.hidden=true},400);res.append(renderResearch(j.result));break}
+    }catch(e){stage.replaceChildren(h("span",{class:"err"},e.message));barWrap.hidden=true}
+    btn.disabled=false};
+  inp.addEventListener("keydown",e=>{if(e.key==="Enter")btn.click()})}
+
+const THEME_ICONS={moon:'<svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>',sun:'<svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>'};
+function curTheme(){return store.get("theme",null)||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}
+function paintTheme(){const t=curTheme();document.documentElement.setAttribute("data-theme",t);const b=$("#themebtn");b.innerHTML=THEME_ICONS[t==="dark"?"sun":"moon"];b.title=t==="dark"?"Switch to light mode":"Switch to dark mode"}
+$("#themebtn").addEventListener("click",()=>{store.set("theme",curTheme()==="dark"?"light":"dark");paintTheme()});
+paintTheme();
+renderNav();navTo("today");if(cfg.auto)setAuto(true);
+</script>
+</body>
+</html>

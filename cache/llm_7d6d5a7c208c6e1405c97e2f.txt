@@ -1,0 +1,55 @@
+```json
+{
+  "quarter_discussed": "Q3 2025-2026",
+  "guidance": [
+    {
+      "metric": "New Energy Generation Timeline",
+      "statement": "Generation capacity will start coming up within the next 12 to 15 months.",
+      "quote": "during next 12 to 15 months our generation capacity will also start coming up"
+    },
+    {
+      "metric": "O2C Petrochemicals Capacity",
+      "statement": "Operating rates for petrochemical crackers are expected to remain at 80% levels for the year.",
+      "quote": "this year at least we still believe that the operating rates are likely to be at 80% levels only"
+    },
+    {
+      "metric": "Jio IPO",
+      "statement": "The Jio IPO process is expected to happen in the next few months.",
+      "quote": "so it should happen in the next few months for sure"
+    }
+  ],
+  "delivered_claims": [
+    {
+      "metric": "Jio Customer Additions",
+      "statement": "Jio added 8.9 million net subscribers during the quarter, reaching over 515 million total customers.",
+      "quote": "we ended the quarter with 515 million plus subscribers, 8.9 million net adds during the quarter."
+    },
+    {
+      "metric": "Retail Revenue",
+      "statement": "Reliance Retail reported its highest ever quarterly revenue at 97,600 Crores, up 8.1%.",
+      "quote": "in the retail business this quarter we had the highest ever revenue at 97,600 Crores. The revenue was up 8.1%."
+    },
+    {
+      "metric": "Retail Quick Commerce",
+      "statement": "Quick commerce run rate reached 1.6 million orders in December.",
+      "quote": "we are almost at; we ended the quarter at 1.6 million."
+    },
+    {
+      "metric": "JioStar Monthly Active Users",
+      "statement": "JioStar achieved average monthly active users of 450 million.",
+      "quote": "our average monthly active users is 450 million."
+    },
+    {
+      "metric": "O2C EBITDA",
+      "statement": "O2C EBITDA grew 15% year-on-year to 16,507 Crores.",
+      "quote": "EBITDA of 16,507 versus the previous year when it was 14,400, 15% growth that is quite strong."
+    }
+  ],
+  "analyst_pressure": [
+    "Quick commerce cash burn, contribution margins, and dark store economics",
+    "New energy manufacturing costs, silver export restrictions, and overall capex requirements",
+    "Retail segment single-digit revenue growth drivers and normalization"
+  ],
+  "tone": "confident and optimistic"
+}
+```

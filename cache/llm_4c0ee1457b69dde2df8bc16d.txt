@@ -1,0 +1,15 @@
+```json
+{"quarter_discussed": "Q3FY26",
+ "guidance":[{"metric":"credit growth","statement":"Credit growth guidance revised upwards to 13% to 15% for the current quarter.","quote":"we are revising that upwards to 13% to 15% for the current quarter."},
+             {"metric":"NIM","statement":"Exit NIM for the current year is about 3% and long-term guidance is 3% through the cycles.","quote":"exit NIM for the current year would be about 3% , and our long-term guidance is 3% through the cycles."},
+             {"metric":"cost to income ratio","statement":"Objective is to keep the cost to income ratio below 50 bps.","quote":"Our objective is to keep the cost to income ratio below 50 bps."},
+             {"metric":"ROA","statement":"Guidance remains at 1% ROA through the cycles.","quote":"We said our guidance is 1% ROA through the cycles."}],
+ "delivered_claims":[{"metric":"net profit","statement":"Declared the highest-ever quarterly net profit of Rs. 21,028 crore, up 24.49% year-on-year.","quote":"bank has declared the highest-ever quarterly net profit of Rs. 21,028 crore and total business have crossed Rs. 103 trillion"},
+                     {"metric":"operating profit","statement":"Operating profit is Rs. 32,862 crores, up 39.54% year-on-year.","quote":"The operating profit is Rs. 32,862 crores, up 39.54% year-on-year."},
+                     {"metric":"net interest income","statement":"Net interest income is Rs. 45,190 crores, up 9% year-on-year with domestic NIM at 3.12%.","quote":"The net interest income is Rs. 45,190 crores, up 9% year-on-year, while the domestic NIM stands at 3.12% for the quarter."},
+                     {"metric":"asset quality","statement":"Gross NPAs at 1.57% and net NPA at 0.39%.","quote":"gross NPAs at 1.57%, improving by 50 basis points, and net NPA at 0.39%, improving by 14 basis points."},
+                     {"metric":"capital adequacy ratio","statement":"Capital adequacy ratio stands at 14.04%, improving by 101 basis points year-on-year.","quote":"capital adequacy ratio has improved by 101 basis points year -on-year and stands at 14.04%"},
+                     {"metric":"ROE","statement":"ROE stands at 20.68% at the end of Q3.","quote":"ROE at 20.68% at the end of Q3."}],
+ "analyst_pressure":["profitability levers and sustainability of one-off items", "credit growth outlook and loan segment drivers", "cost of funds, deposit repricing, and NIM resilience"],
+ "tone":"optimistic"}
+```

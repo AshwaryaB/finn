@@ -1,0 +1,37 @@
+```json
+{
+  "what_it_does": "State Bank of India provides comprehensive banking and financial services, including personal, retail, SME, and corporate banking, agricultural lending, wealth management, international banking, and digital financial solutions to urban and rural customers.",
+  "segments": [
+    {
+      "name": "Retail Banking",
+      "description": "Offers personal banking, housing loans, auto loans, education loans, personal loans, and pension loans to individual customers.",
+      "revenue_share": null
+    },
+    {
+      "name": "Rural Banking",
+      "description": "Provides agricultural and allied lending, SME financing, and micro-credit solutions to support rural development.",
+      "revenue_share": null
+    },
+    {
+      "name": "SME Banking",
+      "description": "Caters to small and medium enterprises with supply chain finance, cash-flow-based lending, and digital credit delivery.",
+      "revenue_share": null
+    },
+    {
+      "name": "Corporate Banking",
+      "description": "Delivers corporate credit portfolios and specialized commercial banking services through dedicated business groups.",
+      "revenue_share": null
+    },
+    {
+      "name": "International Banking",
+      "description": "Manages overseas operations, trade finance, and correspondent banking services across multiple foreign branches.",
+      "revenue_share": null
+    },
+    {
+      "name": "Government Business",
+      "description": "Acts as an accredited banker for major central and state government ministries, departments, and entities.",
+      "revenue_share": null
+    }
+  ]
+}
+```

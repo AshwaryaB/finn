@@ -1,0 +1,7 @@
+```json
+{"quarter_discussed": null,
+ "guidance":[],
+ "delivered_claims":[],
+ "analyst_pressure":["Resignation reasons and ethics/values mentioned by outgoing Chairman Atanu Chakraborty", "Potential power struggle, friction at board or executive level, and management cohesiveness", "Handling of anonymous social media complaints and regulatory/board oversight"],
+ "tone":"defensive and reassuring"}
+```

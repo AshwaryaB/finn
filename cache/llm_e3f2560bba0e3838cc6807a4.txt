@@ -1,0 +1,18 @@
+```json
+{"quarter_discussed": "Q2FY27",
+ "guidance":[],
+ "delivered_claims":[
+   {"metric":"revenue","statement":"Revenue for the quarter was ₹73,188 crore.","quote":"Revenue for the quarter was ₹73,188 crore."},
+   {"metric":"constant currency revenue growth","statement":"In constant currency, revenue grew 0.5% sequentially and 2.8% year-on-year.","quote":"In constant currency, revenue grew 0.5% sequentially and 2.8% year-on-year."},
+   {"metric":"international revenue","statement":"International revenue grew 1.2% sequentially in constant currency.","quote":"International revenue grew 1.2% sequentially in constant currency."},
+   {"metric":"TCV","statement":"TCV for the quarter was US$9.6 billion.","quote":"TCV for the quarter was US$9.6 billion."},
+   {"metric":"AI revenue","statement":"Annualized AI revenue reached $3.1 billion and crossed 10% of our overall revenue.","quote":"Annualized AI revenue reached $3.1 billion and crossed 10% of our overall revenue."},
+   {"metric":"operating margins","statement":"Our operating margins remained stable sequentially at 24%.","quote":"Our operating margins remained stable sequentially at 24%."}
+ ],
+ "analyst_pressure":[
+   "Growth momentum and sustainability in international business",
+   "Margin pressures, subcontracting costs, and path to 26% margin aspiration",
+   "AI revenue impact versus traditional revenue and deﬂation"
+ ],
+ "tone":"cautiously optimistic"}
+```

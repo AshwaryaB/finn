@@ -1,0 +1,140 @@
+```json
+{
+  "financial_snapshot": {
+    "headline": [
+      {
+        "label": "Sales (Sep 2026)",
+        "value": "24,753",
+        "note": "Quarterly sales in Sep 2026 [Quarters]"
+      },
+      {
+        "label": "Net Profit (Sep 2026)",
+        "value": "3,200",
+        "note": "Quarterly net profit in Sep 2026 [Quarters]"
+      },
+      {
+        "label": "TTM Sales",
+        "value": "97,023",
+        "note": "Trailing twelve months sales [P&L]"
+      },
+      {
+        "label": "TTM Net Profit",
+        "value": "13,223",
+        "note": "Trailing twelve months net profit [P&L]"
+      }
+    ],
+    "summary": "Sales reached 24,753 in Sep 2026 with net profit of 3,200 [Quarters], while TTM sales stood at 97,023 [P&L]."
+  },
+  "trajectory": {
+    "growing": [
+      "Quarterly sales expanded from 22,319 in Dec 2024 to 24,753 in Sep 2026 [Quarters].",
+      "Borrowings increased from 16,465 in Mar 2024 to 22,106 in Sep 2026 [BS]."
+    ],
+    "compressing": [
+      "Operating profit margin moved from 21% in Mar 2025 to 18% in Dec 2025 before returning to 20% in Sep 2026 [Quarters].",
+      "Free cash flow dropped from 16,973 in Mar 2024 to 13,447 in Mar 2026 [CF]."
+    ],
+    "summary": "Sales show steady upward trajectory [Quarters], but borrowings increased [BS] and free cash flow contracted [CF]."
+  },
+  "balance_sheet": {
+    "points": [
+      "Total liabilities expanded to 135,527 in Sep 2026 from 114,609 in Mar 2024 [BS].",
+      "Reserves decreased to 76,978 in Sep 2026 from 85,921 in Mar 2026 [BS].",
+      "Fixed assets grew from 43,628 in Mar 2024 to 55,591 in Sep 2026 [BS]."
+    ],
+    "summary": "Balance sheet reflects asset growth alongside increased borrowing and declining reserves in Sep 2026 [BS]."
+  },
+  "cash_quality": {
+    "points": [
+      "CFO/EBITDA conversion ratio stood at 99% in Mar 2026 [CF].",
+      "Free cash flow reached 13,447 in Mar 2026, down from 15,621 in Mar 2025 [CF].",
+      "Cash from operating activity was 14,932 in Mar 2026 compared to 16,943 in Mar 2025 [CF]."
+    ],
+    "summary": "Cash flow quality remains stable with strong operating cash conversion at 99% despite lower FCF [CF]."
+  },
+  "narrative_vs_numbers": [
+    {
+      "quarter": "Q3 FY'26",
+      "promised": [
+        "No prior call guidance provided in material [T Jan 2026]."
+      ],
+      "delivered": [
+        "Sales reached 23,556 and Operating Profit was 4,296 in Dec 2025 [Quarters]."
+      ],
+      "verdict": "unclear",
+      "comment": "Prior quarter guidance is absent from provided transcript digests [T Jan 2026]."
+    },
+    {
+      "quarter": "Q4 FY '26",
+      "promised": [
+        "Sequential IT Services revenue growth of 0% to 2.0% in constant currency for Quarter 4 [T Jan 2026]."
+      ],
+      "delivered": [
+        "Sales rose to 24,236 in Mar 2026 from 23,556 in Dec 2025 [Quarters]."
+      ],
+      "verdict": "met",
+      "comment": "Sales grew 2.89% sequentially in INR terms while IT Services revenue grew 1.4% in CC [Quarters], [T Apr 2026]."
+    },
+    {
+      "quarter": "Q1 FY27",
+      "promised": [
+        "Sequential growth of minus 2% to 0% in constant currency terms for Q1 [T Apr 2026]."
+      ],
+      "delivered": [
+        "Sales reached 24,479 in Jun 2026 compared to 24,236 in Mar 2026 [Quarters]."
+      ],
+      "verdict": "met",
+      "comment": "IT Services revenue fell 1.2% sequentially in CC, which was inside guidance [T Jul 2026], [Quarters]."
+    },
+    {
+      "quarter": "Q2 FY27",
+      "promised": [
+        "Sequential growth of -1.5% to +0.5% in constant currency terms for Q2 [T Jul 2026]."
+      ],
+      "delivered": [
+        "Sales reached 24,753 in Sep 2026 compared to 24,479 in Jun 2026 [Quarters]."
+      ],
+      "verdict": "met",
+      "comment": "IT Services revenue was flat sequentially at 0.0% CC growth, meeting guidance [T Oct 2026], [Quarters]."
+    }
+  ],
+  "guidance": [
+    {
+      "metric": "IT services revenue growth",
+      "statement": "Sequential IT services revenue growth of minus 1.5% to plus 0.5% in constant currency.",
+      "quote": "We are guiding for a sequential IT services revenue growth of minus 1.5% to plus 0.5% in constant currency.",
+      "call": "Oct 2026"
+    },
+    {
+      "metric": "IT services revenue sequential growth",
+      "statement": "management expects sequential growth of -1.5% to +0.5% in constant currency terms for quarter 2",
+      "quote": "In quarter 2, we are guiding for a sequential growth of -1.5% to +0.5% in constant currency terms.",
+      "call": "Jul 2026"
+    },
+    {
+      "metric": "IT Services sequential revenue growth (Q1)",
+      "statement": "In Q1, we are guiding for a sequential growth of minus 2% to 0% in constant currency terms.",
+      "quote": "In Q1, we are guiding for a sequential growth of minus 2% to 0% in constant currency terms.",
+      "call": "Apr 2026"
+    },
+    {
+      "metric": "IT Services revenue growth",
+      "statement": "projecting sequential IT Services revenue growth of 0% to 2.0% in constant currency for Quarter 4",
+      "quote": "In Quarter 4, we are projecting sequential IT Services revenue growth of 0% to 2.0% in constant currency.",
+      "call": "Jan 2026"
+    }
+  ],
+  "bull_bear": {
+    "bull": [
+      "Quarterly sales increased steadily from 22,135 in Jun 2025 to 24,753 in Sep 2026 [Quarters].",
+      "CFO/EBITDA conversion ratio remained strong at 99% in Mar 2026 [CF].",
+      "Dividend payout ratio increased significantly to 87% in Mar 2026 [P&L]."
+    ],
+    "bear": [
+      "Borrowings increased from 16,465 in Mar 2024 to 22,106 in Sep 2026 [BS].",
+      "Free cash flow declined from 16,973 in Mar 2024 to 13,447 in Mar 2026 [CF].",
+      "Interest expense grew to 545 in Sep 2026 from 361 in Sep 2025 [Quarters]."
+    ]
+  }
+}
+```

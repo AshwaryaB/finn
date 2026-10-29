@@ -1,0 +1,17 @@
+```json
+{
+  "what_it_does": "ICICI Bank Limited is a banking institution that provides financial services, corporate and retail banking, and operates through various subsidiaries and associates offering products such as life insurance, general insurance, and asset management.",
+  "segments": [
+    {
+      "name": "Life Insurance",
+      "description": "Life insurance products and services offered through subsidiary ICICI Prudential Life Insurance Company Limited.",
+      "revenue_share": null
+    },
+    {
+      "name": "General Insurance",
+      "description": "General insurance services offered through subsidiary ICICI Lombard General Insurance Company Limited.",
+      "revenue_share": null
+    }
+  ]
+}
+```

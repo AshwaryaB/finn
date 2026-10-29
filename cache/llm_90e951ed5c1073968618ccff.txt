@@ -1,0 +1,22 @@
+```json
+{
+  "what_it_does": "HDFC Bank provides a comprehensive range of financial and banking services, including retail and wholesale banking, treasury operations, credit cards, housing loans, working capital solutions, and digital banking products.",
+  "segments": [
+    {
+      "name": "Retail Banking",
+      "description": "Provides retail banking services and consumer-focused financial products.",
+      "revenue_share": null
+    },
+    {
+      "name": "Wholesale Banking",
+      "description": "Offers corporate and commercial banking services to businesses and enterprises.",
+      "revenue_share": null
+    },
+    {
+      "name": "Treasury",
+      "description": "Manages treasury operations, foreign exchange, and market activities.",
+      "revenue_share": null
+    }
+  ]
+}
+```

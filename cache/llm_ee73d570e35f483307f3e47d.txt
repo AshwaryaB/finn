@@ -1,0 +1,18 @@
+```json
+{"quarter_discussed": "Q4 FY2025-26",
+ "guidance": [],
+ "delivered_claims": [
+  {"metric": "Jio Platforms Subscribers", "statement": "Ended the year with 524 million subscribers, a net add of 36.3 million during the year.", "quote": "We ended the year with 524 million subscribers that is a net add of 36.3 million during the year"},
+  {"metric": "Jio Platforms 5G User Base", "statement": "Reached 268 million 5G user base, an addition of 77 million during the year.", "quote": "268 million 5G user base, so that is an addition of 77 million during the year of 5G subscribers."},
+  {"metric": "Fixed Broadband Connects", "statement": "Reached 27 million fixed broadband connects with a net addition of almost 10 million during the year.", "quote": "27 million fixed broadband connects that was a net addition of almost 10 million during the year"},
+  {"metric": "Jio Platforms Revenue", "statement": "Full year operating revenue reached Rs. 1,46,085 Crores, up 14.6% year-on-year.", "quote": "revenue for the year at Rs.1,46,085 Crores, which was up 14.6% year-on-year"},
+  {"metric": "Retail Revenue", "statement": "Delivered highest ever quarterly revenue of Rs. 98,000 Crores in Q4, up 11% Y-o-Y.", "quote": "For the quarter, we had the highest ever revenues of Rs.98,000 Crores... 11% growth on a Y-o-Y basis for the full quarter."},
+  {"metric": "FMCG Revenue", "statement": "Closed revenue of Rs. 22,000 Crores in 2026, with Q4 revenue at Rs. 7,350 Crores.", "quote": "we closed our revenue of Rs.22,000 Crores in 2026 and for the Q4 alone, we delivered a revenue of Rs.7350 Crores"}
+ ],
+ "analyst_pressure": [
+  "Concerns regarding refining operations, alternative crude impacts on distillate yield, and procurement/freight costs",
+  "Sustainability of fuel retail losses and potential for price increases",
+  "Quick commerce competition, dark store strategy, and impact on retail EBITDA margins"
+ ],
+ "tone": "cautiously optimistic"}
+```

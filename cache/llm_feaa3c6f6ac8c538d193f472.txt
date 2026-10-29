@@ -1,0 +1,142 @@
+```json
+{
+  "financial_snapshot": {
+    "headline": [
+      {
+        "label": "TTM Revenue",
+        "value": "359,956",
+        "note": "TTM Revenue in Rs [P&L]"
+      },
+      {
+        "label": "TTM Net Profit",
+        "value": "83,685",
+        "note": "TTM Net Profit in Rs [P&L]"
+      },
+      {
+        "label": "Deposits Sep 2026",
+        "value": "3,324,146",
+        "note": "Total deposits in Rs [BS]"
+      }
+    ],
+    "summary": "Revenue reached 359,956 in TTM while Net Profit reached 83,685 [P&L]. Total deposits expanded to 3,324,146 as of Sep 2026 [BS]."
+  },
+  "trajectory": {
+    "growing": [
+      "Revenue grew from 122,189 in Mar 2020 to 348,615 in Mar 2026 and 359,956 TTM [P&L].",
+      "Deposits increased from 1,146,207 in Mar 2020 to 3,324,146 in Sep 2026 [BS].",
+      "Net profit expanded from 27,296 in Mar 2020 to 79,219 in Mar 2026 [P&L]."
+    ],
+    "compressing": [
+      "Financing Margin % compressed from 18% in Mar 2023 to -12% in Mar 2026 [P&L].",
+      "ROE % declined from 17% in Mar 2024 to 14% in Mar 2026 [Ratios]."
+    ],
+    "summary": "Revenue and deposits showed upward trajectory [P&L, BS], whereas financing margins and ROE compressed [P&L, Ratios]."
+  },
+  "balance_sheet": {
+    "points": [
+      "Total deposits stood at 3,324,146 in Sep 2026 compared to 2,710,898 in Mar 2025 [BS].",
+      "Borrowing decreased from 730,615 in Mar 2024 to 594,144 in Sep 2026 [BS].",
+      "Reserves grew from 455,636 in Mar 2024 to 601,927 in Sep 2026 [BS]."
+    ],
+    "summary": "Deposits expanded to 3,324,146 and reserves reached 601,927 while borrowings fell to 594,144 by Sep 2026 [BS]."
+  },
+  "cash_quality": {
+    "points": [
+      "Cash from Operating Activity was 113,506 in Mar 2026 compared to 127,242 in Mar 2025 [CF].",
+      "Free Cash Flow remained positive at 110,144 in Mar 2026 [CF].",
+      "Cash from Financing Activity was -59,005 in Mar 2026 [CF]."
+    ],
+    "summary": "Operating cash flow and free cash flow remained strongly positive at 113,506 and 110,144 respectively in Mar 2026 [CF]."
+  },
+  "narrative_vs_numbers": [
+    {
+      "quarter": "Mar 2026",
+      "promised": [
+        "No specific numeric guidance provided in prior call [T Mar 2026]"
+      ],
+      "delivered": [
+        "Net profit was 21,074 and Revenue was 87,182 in Mar 2026 quarter [Quarters]"
+      ],
+      "verdict": "unclear",
+      "comment": "No prior guidance existed to compare against Mar 2026 results [Quarters, T Mar 2026]."
+    },
+    {
+      "quarter": "Apr 2026",
+      "promised": [
+        "No specific quarterly financial targets delivered in Mar 2026 call [T Mar 2026]"
+      ],
+      "delivered": [
+        "Net Profit reached 21,074 and Revenue was 87,182 in Mar 2026 quarter [Quarters]"
+      ],
+      "verdict": "unclear",
+      "comment": "Lack of prior numerical guidance limits quarterly performance comparison [Quarters, T Mar 2026]."
+    },
+    {
+      "quarter": "Jun 2026",
+      "promised": [
+        "System credit growth estimated at 10.5%-11.5% and LCR target 110%-120% [T Apr 2026]"
+      ],
+      "delivered": [
+        "Revenue increased to 90,575 but Net Profit dropped to 20,383 in Jun 2026 [Quarters]"
+      ],
+      "verdict": "mixed",
+      "comment": "Revenue rose quarter-on-quarter to 90,575 while Net Profit fell to 20,383 [Quarters]."
+    },
+    {
+      "quarter": "Sep 2026",
+      "promised": [
+        "Management expected to secure significant market share in FCNR deposits [T Jul 2026]"
+      ],
+      "delivered": [
+        "Revenue reached 95,132 and Net Profit rose to 21,537 in Sep 2026 [Quarters]"
+      ],
+      "verdict": "met",
+      "comment": "Both Revenue and Net Profit grew quarter-on-quarter in Sep 2026 [Quarters]."
+    }
+  ],
+  "guidance": [
+    {
+      "metric": "net interest margin",
+      "statement": "management expects net interest margins to reverse and improve as they enter an upward rate cycle",
+      "quote": "the net interest margins... is also positioned for a reversal as we enter the upward rate cycle",
+      "call": "Oct 2026"
+    },
+    {
+      "metric": "net interest margin",
+      "statement": "management states that margins are at the bottom and the trajectory will be upward from the next quarter",
+      "quote": "from a trajectory point of view, I think that it is at the bottom... The trajectory will be upward from the next quarter onwards",
+      "call": "Oct 2026"
+    },
+    {
+      "metric": "Deposits / Market Share",
+      "statement": "Management expects to secure a significant market share in FCNR deposits.",
+      "quote": "definitely if the system is X, we will be a significant portion of the system as we were in the 2014, ‘15 period.",
+      "call": "Jul 2026"
+    },
+    {
+      "metric": "credit growth",
+      "statement": "management estimated system credit growth to be around 10.5% to 11.5%",
+      "quote": "We had estimated the system credit growth to be around 10.5% to 11.5%.",
+      "call": "Apr 2026"
+    },
+    {
+      "metric": "LCR",
+      "statement": "endeavor for LCR is to be between 110% and 120%",
+      "quote": "our endeavor for LCR is to be between 110% and 120%.",
+      "call": "Apr 2026"
+    }
+  ],
+  "bull_bear": {
+    "bull": [
+      "Revenue expanded to 95,132 in Sep 2026 quarter with Net Profit at 21,537 [Quarters].",
+      "Operating cash flow was 113,506 in Mar 2026 with free cash flow of 110,144 [CF].",
+      "Deposits grew to 3,324,146 by Sep 2026 while equity reserves reached 601,927 [BS]."
+    ],
+    "bear": [
+      "Financing margin % remained negative at -6% in Sep 2026 quarter [Quarters].",
+      "ROE % declined from 17% in Mar 2024 to 14% in Mar 2026 [Ratios].",
+      "Margin pressures and potential friction at board level raised by analysts [T Mar 2026, T Oct 2026]."
+    ]
+  }
+}
+```

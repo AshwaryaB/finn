@@ -1,0 +1,27 @@
+```json
+{
+  "what_it_does": "Wipro Limited is a leading AI-powered technology services and consulting company focused on building innovative solutions that address clients' most complex digital transformation needs.",
+  "segments": [
+    {
+      "name": "Consulting",
+      "description": "Engages deeply with the C-suite to connect strategy to execution and drive measurable business outcomes.",
+      "revenue_share": null
+    },
+    {
+      "name": "Technology Services",
+      "description": "Delivers cutting-edge cloud-enabled and industry-specific technology solutions, applications, and cybersecurity services.",
+      "revenue_share": null
+    },
+    {
+      "name": "Engineering",
+      "description": "Empowers clients to innovate at scale, build differentiated products, and deliver value across the full product lifecycle.",
+      "revenue_share": null
+    },
+    {
+      "name": "Business Process Services",
+      "description": "Supports global organizations in operating, transforming, and continuously improving core enterprise functions.",
+      "revenue_share": null
+    }
+  ]
+}
+```

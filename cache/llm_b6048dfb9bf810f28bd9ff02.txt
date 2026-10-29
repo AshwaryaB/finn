@@ -1,0 +1,37 @@
+```json
+{
+  "what_it_does": "ITC is a future-forward enterprise operating across FMCG, paperboards and packaging, agri-business, information technology, hotels, and fresh food, building world-class Indian brands, advancing sustainable value chains, and driving digital and R&D innovation.",
+  "segments": [
+    {
+      "name": "FMCG",
+      "description": "Spans world-class Indian brands in foods, personal care, education and stationery, matches, agarbattis, and homecare.",
+      "revenue_share": null
+    },
+    {
+      "name": "Agri-Business",
+      "description": "Ensures identity-preserved crops, sourcing for brands, sustainable agri practices, and next-gen agtech through ITCMAARS.",
+      "revenue_share": null
+    },
+    {
+      "name": "Paperboards & Packaging",
+      "description": "Value-added paperboards, specialty papers, sustainable packaging solutions, cartons, and flexibles.",
+      "revenue_share": null
+    },
+    {
+      "name": "ITC Infotech",
+      "description": "Global technology solutions provider delivering digital engineering, AI-led services, and enterprise transformation.",
+      "revenue_share": null
+    },
+    {
+      "name": "ITC Hotels Limited",
+      "description": "Iconic properties, signature cuisines, and responsible luxury hospitality across destinations.",
+      "revenue_share": null
+    },
+    {
+      "name": "Fresh Food Business",
+      "description": "Fresh food offerings delivered through cloud kitchens combining food brands, cuisine expertise, and digital capabilities.",
+      "revenue_share": null
+    }
+  ]
+}
+```

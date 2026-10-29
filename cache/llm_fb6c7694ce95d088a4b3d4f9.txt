@@ -1,0 +1,37 @@
+```json
+{
+  "what_it_does": "Reliance Industries Limited is engaged in hydrocarbon exploration and production, petroleum refining and marketing, petrochemicals, advanced materials, composites, renewables (solar and hydrogen), retail, digital services, and media and entertainment.",
+  "segments": [
+    {
+      "name": "Hydrocarbon Exploration and Production",
+      "description": "Exploration and production of oil and gas resources.",
+      "revenue_share": null
+    },
+    {
+      "name": "Petroleum Refining and Marketing",
+      "description": "Refining petroleum and marketing petroleum products.",
+      "revenue_share": null
+    },
+    {
+      "name": "Petrochemicals and Advanced Materials",
+      "description": "Manufacturing petrochemicals, advanced materials, and composites.",
+      "revenue_share": null
+    },
+    {
+      "name": "Renewables",
+      "description": "Solar and hydrogen energy initiatives.",
+      "revenue_share": null
+    },
+    {
+      "name": "Retail",
+      "description": "Retail operations and consumer product distribution.",
+      "revenue_share": null
+    },
+    {
+      "name": "Digital Services and Media",
+      "description": "Telecommunication, digital, and media and entertainment services.",
+      "revenue_share": null
+    }
+  ]
+}
+```

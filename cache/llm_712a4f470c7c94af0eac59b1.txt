@@ -1,0 +1,67 @@
+```json
+{
+  "financial_snapshot": {
+    "headline": [
+      {
+        "label": "Sales (Mar 2026)",
+        "value": "78,868",
+        "note": "Increased from 75,323 in Mar 2025 [P&L]"
+      },
+      {
+        "label": "Operating Profit (Mar 2026)",
+        "value": "27,306",
+        "note": "Increased from 25,832 in Mar 2025 [P&L]"
+      },
+      {
+        "label": "Net Profit (Mar 2026)",
+        "value": "21,018",
+        "note": "Decreased from 35,052 in Mar 2025 due to lower other income [P&L]"
+      }
+    ],
+    "summary": "Sales increased to 78,868 in Mar 2026, while Net Profit reduced to 21,018 following exceptional other income recorded in Mar 2025 [P&L]."
+  },
+  "trajectory": {
+    "growing": [
+      "Sales grew to 78,868 in Mar 2026 from 75,323 in Mar 2025 [P&L].",
+      "Operating Profit expanded to 27,306 in Mar 2026 from 25,832 in Mar 2025 [P&L].",
+      "ROCE % reached 39% in Mar 2026 compared to 37% in Mar 2025 [Ratios]."
+    ],
+    "compressing": [
+      "Net Profit fell to 21,018 in Mar 2026 from 35,052 in Mar 2025 [P&L].",
+      "OPM % decreased to 27% in Jun 2026 from 39% in Mar 2026 [Quarters].",
+      "Cash conversion cycle elongated to 164 days in Mar 2026 from 146 days in Mar 2025 [Ratios]."
+    ],
+    "summary": "Long-term revenue and operating profits expanded, though Net Profit dropped from prior elevated levels and recent quarter margins compressed [P&L, Quarters]."
+  },
+  "balance_sheet": {
+    "points": [
+      "Borrowings rose to 2,399 in Mar 2026 from 285 in Mar 2025 [BS].",
+      "Reserves increased to 71,254 in Mar 2026 from 68,779 in Mar 2025 [BS].",
+      "Investments reached 38,128 in Mar 2026 from 34,720 in Mar 2025 [BS]."
+    ],
+    "summary": "Total Assets expanded to 93,637 in Mar 2026, supported by higher reserves, investments, and increased borrowings [BS]."
+  },
+  "cash_quality": {
+    "points": [
+      "Cash from Operating Activity reached 18,464 in Mar 2026, up from 17,627 in Mar 2025 [CF].",
+      "Free Cash Flow increased to 16,332 in Mar 2026 from 15,524 in Mar 2025 [CF].",
+      "CFO to Operating Profit ratio stood at 91% in Mar 2026 [CF]."
+    ],
+    "summary": "Cash conversion remains healthy with cash flow from operations at 18,464 and free cash flow of 16,332 in Mar 2026 [CF]."
+  },
+  "narrative_vs_numbers": [],
+  "guidance": [],
+  "bull_bear": {
+    "bull": [
+      "Sales grew consistently to reach 78,868 in Mar 2026 [P&L].",
+      "Strong Free Cash Flow generation of 16,332 in Mar 2026 [CF].",
+      "High profitability return with ROCE % standing at 39% in Mar 2026 [Ratios]."
+    ],
+    "bear": [
+      "OPM % fell sharply to 27% in Jun 2026 quarter [Quarters].",
+      "Borrowings increased significantly to 2,399 in Mar 2026 [BS].",
+      "Cash conversion cycle lengthened to 164 days in Mar 2026 [Ratios]."
+    ]
+  }
+}
+```

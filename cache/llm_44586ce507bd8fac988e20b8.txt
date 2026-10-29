@@ -1,0 +1,18 @@
+```json
+{"quarter_discussed": "Q3-2026",
+ "guidance": [],
+ "delivered_claims": [
+   {"metric": "core operating profit growth", "statement": "The core operating profit increased by 6.0% year-on-year and 2.5% quarter-on-quarter to 175.13 billion Rupees in this quarter.", "quote": "The core operating profit increased by 6.0% year -on-year and 2.5% quarter -on-quarter to 175.13 billion Rupees in this quarter."},
+   {"metric": "average deposits growth", "statement": "Average deposits grew by 8.7% year-on-year and 1.8% sequentially in this quarter.", "quote": "Average deposits grew by 8.7% year-on-year and 1.8% sequentially and average current and savings account deposits grew by 8.9% year -on-year and 1.5% sequentially in this quarter."},
+   {"metric": "total deposits growth", "statement": "Total deposits grew by 9.2% year-on-year and 2.9% sequentially at December 31, 2025.", "quote": "Total deposits grew by 9.2% year-on-year and 2.9% sequentially at December 31, 2025."},
+   {"metric": "domestic loan portfolio growth", "statement": "The domestic loan portfolio grew by 11.5% year-on-year and 4.0% sequentially at December 31, 2025.", "quote": "The domestic loan portfolio grew by 11.5% year -on-year and 4.0% sequentially at December 31, 2025"},
+   {"metric": "net NPA ratio", "statement": "The net NPA ratio was 0.37% at December 31, 2025.", "quote": "The net NPA ratio was 0.37% at December 31, 2025 compared to 0.39% at September 30, 2025 and 0.42% at December 31, 2024."},
+   {"metric": "net interest margin", "statement": "The net interest margin was 4.30% in this quarter.", "quote": "The net interest margin was 4.30% in this quarter compared to 4.30% in the previous quarter and 4.25% in Q3 of last year."}
+ ],
+ "analyst_pressure": [
+   "Regulatory standard asset provisioning on agricultural priority sector lending and underlying issues",
+   "Credit card portfolio growth trend and festive spend impact",
+   "Loan-to-deposit ratio (LDR) and deposit growth dynamics"
+ ],
+ "tone": "confident and cautious"}
+```

@@ -1,0 +1,41 @@
+```json
+{
+ "quarter_discussed": "Q1 FY27",
+ "guidance": [
+  {
+   "metric": "Deposits / Market Share",
+   "statement": "Management expects to secure a significant market share in FCNR deposits.",
+   "quote": "definitely if the system is X, we will be a significant portion of the system as we were in the 2014, \u201815 period."
+  }
+ ],
+ "delivered_claims": [
+  {
+   "metric": "ECLGS 5.0 disbursements",
+   "statement": "The bank disbursed close to INR 14,000 crores under the ECLGS 5.0 scheme by June 30.",
+   "quote": "disbursement in that scheme of close to INR14,000 crores under the ECLGS scheme."
+  },
+  {
+   "metric": "Per branch productivity",
+   "statement": "Average per branch metric reached INR 330 crores.",
+   "quote": "we are about INR 330 crores per branch currently."
+  },
+  {
+   "metric": "MSME segment growth",
+   "statement": "Business banking grew at 22.3% this year.",
+   "quote": "business banking which is the largest component of our MSME segment grow at 22.3% this year."
+  }
+ ],
+ "analyst_pressure": [
+  {
+   "analyst_pressure": "Margins bottoming out, cost of funds, and levers for margin recovery."
+  },
+  {
+   "analyst_pressure": "Decline in CASA ratio and paths to restore historical levels."
+  },
+  {
+   "analyst_pressure": "Profit growth lagging balance sheet growth."
+  }
+ ],
+ "tone": "Cautiously optimistic"
+}
+```

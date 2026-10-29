@@ -1,0 +1,45 @@
+```json
+{
+ "quarter_discussed": "Q1 FY2027",
+ "guidance": [
+  {
+   "metric": "margins",
+   "statement": "Management strives to exit at 25% plus margins sooner rather than later.",
+   "quote": "We want to exit at 25% plus and strive to achieve it sooner rather than later."
+  },
+  {
+   "metric": "demand",
+   "statement": "Management expects demand to improve sometime in Q2.",
+   "quote": "I expect the demand to improve sometime in Q2."
+  }
+ ],
+ "delivered_claims": [
+  {
+   "metric": "revenue",
+   "statement": "Q1 revenue reached ₹72,275 crore, marking 2.2% sequential and 13.9% year-on-year growth.",
+   "quote": "Our Q1 revenue stood at ₹72,275 crore, growing 2.2% sequentially and 13.9% year-on-year."
+  },
+  {
+   "metric": "tcv",
+   "statement": "Delivered a TCV of $9.5 billion in Q1.",
+   "quote": "We delivered a TCV of $9.5 billion, including net new AI-led business transformation deals"
+  },
+  {
+   "metric": "operating margin",
+   "statement": "Operating margins for the quarter stood at 24%.",
+   "quote": "Our operating margins stood at 24%, down 130 bps sequentially, primarily due to wage hikes."
+  },
+  {
+   "metric": "ai revenue",
+   "statement": "AI services annualized revenue stood at $2.6 billion at the end of Q1 FY27.",
+   "quote": "At the end of Q1 FY27, it stands at $2.6 billion in annualized revenue, which is up 13.6% QoQ."
+  }
+ ],
+ "analyst_pressure": [
+  "Macro and geopolitical uncertainties impacting near-term demand and discretionary spend",
+  "Productivity pass-through and potential revenue deflation from AI",
+  "Segmental margin declines and trajectory of margins back to previous levels"
+ ],
+ "tone": "cautiously optimistic"
+}
+```

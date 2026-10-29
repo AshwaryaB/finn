@@ -1,0 +1,7 @@
+```json
+{"quarter_discussed": "Q2 FY27",
+ "guidance":[{"metric":"IT services revenue growth","statement":"Sequential IT services revenue growth of minus 1.5% to plus 0.5% in constant currency.","quote":"We are guiding for a sequential IT services revenue growth of minus 1.5% to plus 0.5% in constant currency."}],
+ "delivered_claims":[{"metric":"IT services revenue","statement":"IT services revenue stood at $2.61 billion for the quarter.","quote":"In quarter 2, our IT services revenue stood at $2.61 billion, flat sequentially and up 0.6% year-on-year in constant currency."},{"metric":"Operating margin","statement":"Operating margin for the quarter was 16.5%.","quote":"Our operating margin for the quarter was 16.5%, an improvement of 0.5% compared to last quarter."},{"metric":"Total contract value (TCV)","statement":"Closed $2.6 billion in total contract value and signed nine large deals.","quote":"This quarter, we closed $2.6 billion in total contract value and signed nine large deals."},{"metric":"Operating cash flows","statement":"Generated 166% of net income in operating cash flows.","quote":"We generated 166% of net income."},{"metric":"Earnings per share (EPS)","statement":"EPS for the quarter was at INR3.23.","quote":"EPS, which is the right metric given that we completed our buyback, for the quarter was at INR3.23"}],
+ "analyst_pressure":["TCV decline and deal slippages","BFSI segment performance relative to peers","Healthcare vertical weakness and policy impacts"],
+ "tone":"professional and cautious"}
+```

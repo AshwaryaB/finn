@@ -1,0 +1,135 @@
+```json
+{
+  "financial_snapshot": {
+    "headline": [
+      {
+        "label": "Revenue (Jun 2026)",
+        "value": "136,240",
+        "note": "Up from 125,729 in Jun 2025 [Quarters]"
+      },
+      {
+        "label": "Net Profit (Jun 2026)",
+        "value": "25,121",
+        "note": "Quarterly record high [Quarters]"
+      },
+      {
+        "label": "EPS (Jun 2026)",
+        "value": "26.12",
+        "note": "In Rs per share [Quarters]"
+      },
+      {
+        "label": "ROE (Mar 2026)",
+        "value": "15%",
+        "note": "Down from 17% in Mar 2025 [Ratios]"
+      }
+    ],
+    "summary": "Revenue and Net Profit reached quarterly highs of 136,240 and 25,121 in Jun 2026, while ROE stood at 15% in Mar 2026 [Quarters], [Ratios]."
+  },
+  "trajectory": {
+    "growing": [
+      "Revenue expanded from 439,189 in Mar 2024 to 514,933 in Mar 2026 [P&L].",
+      "Deposits grew from 4,966,537 in Mar 2024 to 6,043,097 in Mar 2026 [BS].",
+      "Net Profit increased from 69,543 in Mar 2024 to 86,666 in Mar 2026 [P&L]."
+    ],
+    "compressing": [
+      "Financing Profit stayed negative, reaching -78,853 in Mar 2026 [P&L].",
+      "ROE compressed from 17% in Mar 2025 to 15% in Mar 2026 [Ratios]."
+    ],
+    "summary": "Topline revenue and deposits expanded consistently through Mar 2026, though financing profit remained negative and ROE declined slightly [P&L], [BS], [Ratios]."
+  },
+  "balance_sheet": {
+    "points": [
+      "Deposits reached 6,043,097 in Mar 2026, up from 5,439,898 in Mar 2025 [BS].",
+      "Borrowings increased to 777,302 in Mar 2026 from 610,857 in Mar 2025 [BS].",
+      "Total assets expanded to 8,321,176 in Mar 2026 from 7,313,730 in Mar 2025 [BS]."
+    ],
+    "summary": "Balance sheet size reached 8,321,176 in Mar 2026, driven by growth in deposits and borrowings [BS]."
+  },
+  "cash_quality": {
+    "points": [
+      "Cash from operating activity was 38,097 in Mar 2026, down from 45,484 in Mar 2025 [CF].",
+      "Free cash flow was 29,734 in Mar 2026 compared to 39,847 in Mar 2025 [CF].",
+      "Net cash flow stood at 43,910 in Mar 2026 [CF]."
+    ],
+    "summary": "Operating cash flow and free cash flow remained positive in Mar 2026 at 38,097 and 29,734 respectively [CF]."
+  },
+  "narrative_vs_numbers": [
+    {
+      "quarter": "Q2FY26",
+      "promised": [
+        "Prior transcript guidance not available in provided materials [Nov 2025]."
+      ],
+      "delivered": [
+        "Net Profit reached 21,861 and Revenue reached 128,040 in Sep 2025 [Quarters]."
+      ],
+      "verdict": "unclear",
+      "comment": "No prior call guidance in provided materials to evaluate against Sep 2025 results [Nov 2025], [Quarters]."
+    },
+    {
+      "quarter": "Q3FY26",
+      "promised": [
+        "NIM to remain above 3% in Q3 and Q4 [Nov 2025]."
+      ],
+      "delivered": [
+        "Dec 2025 Net Profit was 22,176; domestic NIM delivered at 3.12% [Quarters], [Feb 2026]."
+      ],
+      "verdict": "met",
+      "comment": "Domestic NIM of 3.12% exceeded the promised 3% threshold for Q3FY26 [Quarters], [Feb 2026]."
+    },
+    {
+      "quarter": "Q4FY26",
+      "promised": [
+        "Exit NIM for current year about 3% and credit growth 13-15% [Feb 2026]."
+      ],
+      "delivered": [
+        "Mar 2026 Net Profit was 20,508; domestic NIM delivered at 3.03% [Quarters], [May 2026]."
+      ],
+      "verdict": "met",
+      "comment": "Domestic NIM delivered at 3.03%, fulfilling exit NIM guidance of about 3% [Quarters], [May 2026]."
+    },
+    {
+      "quarter": "Q1FY27",
+      "promised": [
+        "Full year FY27 domestic NIM to remain above 3% [May 2026]."
+      ],
+      "delivered": [
+        "Jun 2026 Net Profit reached 25,121 and Revenue hit 136,240 [Quarters]."
+      ],
+      "verdict": "met",
+      "comment": "Jun 2026 Net Profit reached 25,121 with domestic NIM remaining resilient at 3% [Quarters], [Aug 2026]."
+    }
+  ],
+  "guidance": [
+    {
+      "metric": "credit growth",
+      "statement": "management guides for a credit growth of 14% to 15%",
+      "quote": "That is the reason I have given the credit growth guidance of 14% to 15%.",
+      "call": "Aug 2026"
+    },
+    {
+      "metric": "domestic net interest margin",
+      "statement": "management expects domestic net interest margin to remain resilient at 3% for the financial year",
+      "quote": "domestic Net Interest Margin remained resilient at 3%, reinforcing our confidence in maintaining our guidance for the financial year.",
+      "call": "Aug 2026"
+    },
+    {
+      "metric": "loan growth guidance",
+      "statement": "management revised FY27 loan growth guidance to 13-15%",
+      "quote": "the bank has revised FY27 loan growth guidance to 13-15% from 12-14%",
+      "call": "Aug 2026"
+    }
+  ],
+  "bull_bear": {
+    "bull": [
+      "Revenue reached a high of 136,240 and Net Profit hit 25,121 in Jun 2026 [Quarters].",
+      "Deposits expanded to 6,043,097 in Mar 2026 from 5,439,898 in Mar 2025 [BS].",
+      "Domestic NIM remained resilient at 3% supporting FY27 credit growth targets [Aug 2026]."
+    ],
+    "bear": [
+      "Financing Margin % remained negative at -8% in Jun 2026 and -15% in Mar 2026 [Quarters], [P&L].",
+      "ROE declined from 17% in Mar 2025 to 15% in Mar 2026 [Ratios].",
+      "Analyst pressure noted slow deposit growth relative to peers and increasing slippages [Aug 2026]."
+    ]
+  }
+}
+```
